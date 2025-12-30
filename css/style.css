@@ -96,7 +96,8 @@ a {
 }
 
 .logo {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   line-height: 0;
   position: relative;
 }
