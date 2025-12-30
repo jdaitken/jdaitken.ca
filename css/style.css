@@ -86,12 +86,32 @@ a {
 .logo {
   display: inline-block;
   line-height: 0;
+  position: relative;
 }
 
 .logo img {
   height: 28px;
   width: auto;
   display: block;
+  visibility: hidden;
+}
+
+.logo::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: currentColor;
+  mask: url("/assets/brand/diamond-mark--dark.svg") center/contain no-repeat;
+  -webkit-mask: url("/assets/brand/diamond-mark--dark.svg") center/contain no-repeat;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo::before {
+    background-color: #fff;
+    mask: url("/assets/brand/diamond-mark--light.svg") center/contain no-repeat;
+    -webkit-mask: url("/assets/brand/diamond-mark--light.svg") center/contain no-repeat;
+  }
 }
 
 .nav a {
