@@ -88,10 +88,6 @@ a {
   line-height: 0;
 }
 
-.logo picture {
-  display: block;
-}
-
 .logo img {
   height: 28px;
   width: auto;
