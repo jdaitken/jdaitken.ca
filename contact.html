@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | JD Media</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/brand/favicon/favicon-light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="/brand/favicon/favicon-dark.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="/brand/favicon/favicon-light.png">
   <script>
     (() => {
       try {
@@ -23,11 +25,16 @@
 </head>
 <body>
 <header class="nav" data-nav>
-  <a class="logo" aria-label="JD Media home" href="/">JD</a>
+  <a class="logo" aria-label="JD Media home" href="/">
+    <picture>
+      <source srcset="/brand/logo/svg/diamond-mark--light.svg" media="(prefers-color-scheme: dark)">
+      <source srcset="/brand/logo/svg/diamond-mark--dark.svg" media="(prefers-color-scheme: light)">
+      <img src="/brand/logo/svg/diamond-mark--dark.svg" alt="">
+    </picture>
+  </a>
   <nav id="primary-navigation" aria-label="Main Navigation" class="nav-links" data-nav-links>
     <a href="/#work">Work</a>
     <a href="/#process">Process</a>
-    <a href="/#pricing">Pricing</a>
     <a href="/#contact" class="nav-cta">Contact</a>
   </nav>
   <div class="nav-actions">
