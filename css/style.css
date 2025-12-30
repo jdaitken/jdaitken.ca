@@ -168,6 +168,15 @@ a {
   text-align: center;
 }
 
+.hero--work {
+  padding: 120px 36px 90px;
+  min-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero h1 {
   font-size: clamp(2.1rem, 5vw, 3.2rem);
   font-weight: 700;
@@ -210,6 +219,7 @@ a {
   max-width: 60ch;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 600;
 }
 
 .section {
@@ -653,6 +663,22 @@ a {
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
+}
+
+.btn.hero-cta {
+  background: #c6a24a;
+  border-color: #c6a24a;
+  color: #0f172a;
+  padding: 14px 30px;
+}
+
+.btn.hero-cta:hover {
+  box-shadow: 0 10px 26px rgba(198, 162, 74, 0.25);
+}
+
+.btn.hero-cta:focus-visible {
+  outline: 3px solid rgba(198, 162, 74, 0.4);
+  outline-offset: 2px;
 }
 
 .btn.secondary {
