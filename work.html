@@ -4,23 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Work | JD Media</title>
-  <link rel="icon" type="image/svg+xml" href="/brand/favicon/favicon-light.svg" media="(prefers-color-scheme: light)">
-  <link rel="icon" type="image/svg+xml" href="/brand/favicon/favicon-dark.svg" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="/brand/favicon/favicon-light.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="/brand/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/brand/favicon/favicon-16.png">
-  <script>
-    (() => {
-      try {
-        const stored = localStorage.getItem('jd-theme');
-        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = stored === 'light' || stored === 'dark' ? stored : (systemDark ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', theme);
-      } catch (err) {
-        console.warn('Theme bootstrap skipped', err);
-      }
-    })();
-  </script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/chat.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -37,10 +24,6 @@
       <a href="/#contact" class="nav-cta">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button type="button" class="theme-toggle" aria-label="Toggle color theme" data-theme-toggle>
-        <span class="theme-toggle__icon" aria-hidden="true">☀</span>
-        <span class="theme-toggle__label" data-theme-toggle-label>Light</span>
-      </button>
       <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
         <span class="menu-icon" aria-hidden="true"><span></span></span>
       </button>
@@ -53,7 +36,7 @@
   <p class="subtitle">Built to turn Google searches into calls.</p>
   <div class="hero-actions">
     <a
-      class="btn hero-cta"
+      class="btn"
       href="https://calendly.com/jd-jdaitken/10-minute-landscaping-website-launch-call"
       target="_blank"
       rel="noopener noreferrer"
