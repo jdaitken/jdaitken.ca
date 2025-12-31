@@ -77,15 +77,15 @@ a {
 .nav-main {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 44px;
   flex: 1;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 16px;
-  font-size: 15px;
+  gap: 14px;
+  font-size: 14px;
   line-height: 1.2;
   margin-left: 0;
 }
