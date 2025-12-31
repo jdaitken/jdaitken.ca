@@ -105,13 +105,13 @@ a {
   -webkit-mask: url("/brand/diamond-mark.svg") center/contain no-repeat;
 }
 
-.nav a {
+.nav a:not(.btn) {
   font-weight: 500;
   opacity: 0.8;
   transition: opacity var(--transition);
 }
 
-.nav a:hover {
+.nav a:not(.btn):hover {
   opacity: 1;
   color: var(--accent);
 }
