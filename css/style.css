@@ -74,11 +74,19 @@ a {
   gap: 18px;
 }
 
+.nav-main {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
   gap: 16px;
   font-size: 15px;
+  margin-left: 6px;
 }
 
 .logo {
@@ -103,6 +111,13 @@ a {
   background-color: currentColor;
   mask: url("/brand/diamond-mark.svg") center/contain no-repeat;
   -webkit-mask: url("/brand/diamond-mark.svg") center/contain no-repeat;
+}
+
+.brand-text {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-left: 8px;
 }
 
 .nav a:not(.btn) {
