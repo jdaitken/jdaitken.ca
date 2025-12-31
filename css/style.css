@@ -77,7 +77,7 @@ a {
 .nav-main {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 32px;
   flex: 1;
 }
 
@@ -86,7 +86,7 @@ a {
   align-items: center;
   gap: 16px;
   font-size: 15px;
-  margin-left: 2px;
+  margin-left: 0;
 }
 
 .logo {
@@ -117,7 +117,7 @@ a {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-left: 8px;
+  margin-left: 6px;
 }
 
 .nav a:not(.btn) {
@@ -132,11 +132,11 @@ a {
 }
 
 .nav-cta {
-  padding: 8px 14px;
+  padding: 7px 12px;
   border: 1px solid var(--accent);
   border-radius: 10px;
   opacity: 1;
-  font-size: 14px;
+  font-size: 13px;
   background: var(--accent);
   color: var(--accent-contrast);
   transition: background-color var(--transition), border-color var(--transition), color var(--transition);
