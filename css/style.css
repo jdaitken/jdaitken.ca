@@ -91,35 +91,25 @@ a {
 }
 
 .logo {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  line-height: 0;
+  line-height: 1;
   position: relative;
+  gap: 4px;
 }
 
 .logo img {
-  height: 24px;
-  width: auto;
+  height: 22px;
+  width: 22px;
   display: block;
-  visibility: hidden;
-}
-
-.logo::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-color: currentColor;
-  mask: url("/brand/diamond-mark.svg") center/contain no-repeat;
-  -webkit-mask: url("/brand/diamond-mark.svg") center/contain no-repeat;
+  transform: translateY(0.5px);
 }
 
 .brand-text {
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-left: 6px;
-  line-height: 1.1;
+  letter-spacing: -0.01em;
+  line-height: 1;
 }
 
 .nav a:not(.btn) {
