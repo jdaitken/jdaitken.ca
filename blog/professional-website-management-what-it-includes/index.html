@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+
+  <title>What Professional Website Management Actually Includes | JD Media</title>
+  <meta name="description" content="Paying monthly for website management? Here's exactly what should happen every month, and what's just a hosting bill with a markup.">
+
+  <link rel="icon" type="image/x-icon" href="/brand/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/brand/favicon/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/brand/favicon/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/styles/tokens-v2.css">
+  <link rel="stylesheet" href="/styles/base-v2.css">
+  <link rel="stylesheet" href="/styles/components-v2.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    .tap-to-call { display: none; }
+    @media (max-width: 767px) {
+      .tap-to-call { display: flex; align-items: center; justify-content: center; gap: var(--space-sm); position: sticky; top: 0; z-index: calc(var(--z-sticky) + 1); background: var(--color-accent); color: var(--color-surface); padding: var(--space-sm) var(--space-md); font-size: var(--text-sm); font-weight: var(--font-semibold); text-decoration: none; min-height: 44px; letter-spacing: var(--tracking-wide); }
+      .tap-to-call:hover { background: var(--color-accent-hover); color: var(--color-surface); }
+    }
+    .site-header { position: sticky; top: 0; z-index: var(--z-sticky); background: var(--color-surface); border-bottom: 1px solid var(--color-border); height: var(--header-height-mobile); display: flex; align-items: center; }
+    @media (max-width: 767px) { .site-header { top: 44px; } }
+    @media (min-width: 768px) { .site-header { height: var(--header-height); } }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: var(--container-xl); margin: 0 auto; padding: 0 var(--space-md); }
+    @media (min-width: 768px) { .header-inner { padding: 0 var(--space-xl); } }
+    .nav-desktop { display: none; align-items: center; gap: var(--space-xl); }
+    @media (min-width: 768px) { .nav-desktop { display: flex; } }
+    .nav-desktop a { font-size: var(--text-sm); font-weight: var(--font-medium); color: var(--color-text-secondary); text-decoration: none; transition: color var(--transition-base); }
+    .nav-desktop a:hover { color: var(--color-text); }
+    .header-actions { display: flex; align-items: center; gap: var(--space-sm); }
+    .header-cta { display: none; }
+    @media (min-width: 768px) { .header-cta { display: inline-flex; } }
+    .menu-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: var(--radius-md); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); cursor: pointer; transition: border-color var(--transition-base); }
+    .menu-toggle:hover { border-color: var(--color-text-muted); }
+    @media (min-width: 768px) { .menu-toggle { display: none; } }
+    .menu-icon { position: relative; width: 18px; height: 12px; }
+    .menu-icon::before, .menu-icon::after, .menu-icon span { content: ""; position: absolute; left: 0; right: 0; height: 2px; background: currentColor; border-radius: 1px; }
+    .menu-icon::before { top: 0; } .menu-icon span { top: 5px; } .menu-icon::after { bottom: 0; }
+    .mobile-menu { position: fixed; inset: 0; background: var(--color-overlay); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity var(--transition-slow); z-index: var(--z-modal); }
+    .mobile-menu.is-open { opacity: 1; visibility: visible; pointer-events: auto; }
+    .mobile-menu-panel { width: 100%; height: 100%; background: var(--color-surface); padding: var(--space-lg); display: flex; flex-direction: column; gap: var(--space-xl); transform: translateY(8px); transition: transform var(--transition-slow); }
+    .mobile-menu.is-open .mobile-menu-panel { transform: translateY(0); }
+    .mobile-menu-top { display: flex; align-items: center; justify-content: space-between; }
+    .mobile-menu-close { width: 44px; height: 44px; border-radius: var(--radius-full); border: 1px solid var(--color-border); background: transparent; color: var(--color-text); font-size: var(--text-xl); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .mobile-menu-nav { display: flex; flex-direction: column; gap: var(--space-lg); flex: 1; }
+    .mobile-menu-nav a { font-family: var(--font-display); font-size: var(--text-3xl); font-weight: var(--font-bold); color: var(--color-text); text-decoration: none; }
+    .mobile-menu-footer { margin-top: auto; display: flex; flex-direction: column; gap: var(--space-md); }
+    .mobile-menu-footer a { color: var(--color-text-secondary); font-size: var(--text-sm); }
+
+    /* Blog post */
+    .post-breadcrumbs { padding: var(--space-lg) 0 0; font-size: var(--text-sm); }
+    .post-breadcrumbs a { color: var(--color-accent); font-weight: var(--font-medium); text-decoration: none; }
+    .post-breadcrumbs a:hover { text-decoration: underline; }
+    .post-breadcrumbs span[aria-current] { color: var(--color-text-muted); }
+    .breadcrumb-sep { color: var(--color-text-muted); }
+
+    .post-hero { padding: var(--space-xl) 0 var(--space-lg); }
+    .post-hero .tag { display: inline-block; font-size: var(--text-xs); font-weight: var(--font-semibold); text-transform: uppercase; letter-spacing: var(--tracking-wide); color: var(--color-accent); border: 1px solid var(--color-accent); border-radius: var(--radius-full); padding: 4px 12px; margin-bottom: var(--space-md); text-decoration: none; }
+    .post-hero h1 { max-width: 22ch; margin-bottom: var(--space-md); }
+    .post-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); font-size: var(--text-sm); color: var(--color-text-muted); }
+    .post-meta .meta-sep { color: var(--color-accent); }
+
+    .post-feature-image { max-width: var(--container-xl); margin: 0 auto var(--space-2xl); padding: 0 var(--space-md); }
+    .post-feature-image img { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); }
+    .post-feature-credit { display: block; margin-top: var(--space-sm); font-size: var(--text-xs); color: var(--color-text-muted); }
+
+    .post-body { padding-bottom: var(--space-3xl); }
+    .post-content { max-width: 680px; margin: 0 auto; font-size: var(--text-lg); line-height: var(--leading-relaxed); color: var(--color-text-secondary); }
+    .post-content > * + * { margin-top: var(--space-lg); }
+    .post-content h2 { font-family: var(--font-display); font-size: var(--text-2xl); color: var(--color-text); margin-top: var(--space-2xl); padding-top: var(--space-md); border-top: 2px solid var(--color-accent); }
+    .post-content p { max-width: none; }
+    .post-content a:not(.btn) { color: var(--color-accent-dark); font-weight: var(--font-semibold); }
+    .post-content a:not(.btn):hover { text-decoration: underline; }
+
+    .post-cta { margin-top: var(--space-2xl); background: var(--color-surface); border: 1px solid var(--color-border); border-left: 3px solid var(--color-text); border-radius: var(--card-radius); padding: var(--space-xl); }
+    .post-cta h3 { font-family: var(--font-display); font-size: var(--text-xl); margin-bottom: var(--space-sm); color: var(--color-text); }
+    .post-cta p { color: var(--color-text-secondary); margin-bottom: var(--space-lg); }
+
+    .post-faq { max-width: 680px; margin: var(--space-2xl) auto 0; }
+    .post-faq h2 { font-family: var(--font-display); font-size: var(--text-2xl); color: var(--color-text); margin-bottom: var(--space-lg); }
+    .post-faq-item { border-bottom: 1px solid var(--color-border); padding: var(--space-lg) 0; }
+    .post-faq-item h3 { font-size: var(--text-base); font-weight: var(--font-semibold); color: var(--color-text); margin-bottom: var(--space-sm); }
+    .post-faq-item p { font-size: var(--text-sm); color: var(--color-text-secondary); line-height: var(--leading-relaxed); margin: 0; }
+
+    .site-footer { border-top: 1px solid var(--color-border); padding: var(--space-2xl) 0; }
+    .footer-inner { display: grid; gap: var(--space-xl); }
+    @media (min-width: 768px) { .footer-inner { grid-template-columns: 2fr 1fr 1fr 1fr; } }
+    .footer-brand p { font-size: var(--text-sm); color: var(--color-text-muted); }
+    .footer-links h4 { font-size: var(--text-sm); font-weight: var(--font-semibold); margin-bottom: var(--space-md); color: var(--color-text); }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: var(--space-sm); }
+    .footer-links a { font-size: var(--text-sm); color: var(--color-text-secondary); }
+    .footer-links a:hover { color: var(--color-accent); }
+    .footer-bottom { margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-border); font-size: var(--text-xs); color: var(--color-text-muted); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-sm); }
+  </style>
+
+  <link rel="canonical" href="https://jdaitken.ca/blog/professional-website-management-what-it-includes/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jdaitken.ca/blog/professional-website-management-what-it-includes/">
+  <meta property="og:title" content="What Professional Website Management Actually Includes Month to Month">
+  <meta property="og:description" content="Paying monthly for website management? Here's exactly what should happen every month, and what's just a hosting bill with a markup.">
+  <meta property="og:image" content="https://jdaitken.ca/images/blog/professional-website-management-what-it-includes.jpg">
+  <meta property="og:site_name" content="JD Media">
+  <meta property="og:locale" content="en_CA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Professional Website Management Actually Includes Month to Month">
+  <meta name="twitter:description" content="Paying monthly for website management? Here's exactly what should happen every month, and what's just a hosting bill with a markup.">
+  <meta name="twitter:image" content="https://jdaitken.ca/images/blog/professional-website-management-what-it-includes.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jdaitken.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://jdaitken.ca/blog/" },
+          { "@type": "ListItem", "position": 3, "name": "What Professional Website Management Actually Includes", "item": "https://jdaitken.ca/blog/professional-website-management-what-it-includes/" }
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://jdaitken.ca/#business",
+        "name": "JD Media",
+        "alternateName": "JD Media Ottawa",
+        "description": "Ottawa web design agency building fast websites that get local service businesses more calls from Google, including HVAC, plumbing, landscaping, and home services companies.",
+        "url": "https://jdaitken.ca/",
+        "telephone": "+13435030123",
+        "email": "jd@jdaitken.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ottawa",
+          "addressRegion": "ON",
+          "addressCountry": "CA"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Ottawa", "sameAs": "https://en.wikipedia.org/wiki/Ottawa" },
+          { "@type": "City", "name": "Kanata" },
+          { "@type": "City", "name": "Nepean" },
+          { "@type": "City", "name": "Barrhaven" },
+          { "@type": "City", "name": "Orléans" },
+          { "@type": "City", "name": "Gloucester" },
+          { "@type": "AdministrativeArea", "name": "Ontario" }
+        ],
+        "image": "https://jdaitken.ca/images/og-image.png",
+        "logo": "https://jdaitken.ca/images/logos/jd-media-logo.svg",
+        "priceRange": "$500-$900/mo",
+        "sameAs": [
+          "https://maps.app.goo.gl/VfX5TZv4sw8MnzpP8",
+          "https://www.linkedin.com/company/jd-media-ottawa",
+          "https://www.facebook.com/jdmediahq",
+          "https://www.instagram.com/jdmediahq/",
+          "https://clutch.co/profile/jd-media",
+          "https://greatworkguild.com/listings/jd-media"
+        ],
+        "openingHours": ["Mo-Fr 09:00-17:00"],
+        "founder": { "@id": "https://jdaitken.ca/about#jd" }
+      },
+      {
+        "@type": "Article",
+        "headline": "What Professional Website Management Actually Includes Month to Month",
+        "description": "Paying monthly for website management? Here's exactly what should happen every month, and what's just a hosting bill with a markup.",
+        "datePublished": "2026-10-01",
+        "dateModified": "2026-10-01",
+        "author": { "@id": "https://jdaitken.ca/about#jd" },
+        "publisher": { "@id": "https://jdaitken.ca/#business" },
+        "image": "https://jdaitken.ca/images/blog/professional-website-management-what-it-includes.jpg",
+        "url": "https://jdaitken.ca/blog/professional-website-management-what-it-includes/"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What's included in professional website management?", "acceptedAnswer": { "@type": "Answer", "text": "At minimum, it should include hosting, SSL, and domain management, monthly content or SEO updates targeting real searches, Google Business Profile management, and a report showing what actually happened. Anything less than that is just paid hosting with a nicer name." } },
+          { "@type": "Question", "name": "How much should website management cost per month?", "acceptedAnswer": { "@type": "Answer", "text": "For an Ottawa trade or local service business, a properly managed plan that includes the site, SEO, and Google Business Profile typically runs a few hundred dollars a month. A bare hosting-only plan costs less but does none of the ranking work, so the comparison isn't apples to apples." } },
+          { "@type": "Question", "name": "Is a one-time website build enough, or do I need ongoing management?", "acceptedAnswer": { "@type": "Answer", "text": "A one-time build gets you a site that exists. It doesn't get you a site that keeps ranking, because search results shift as competitors update their pages and Google adjusts what it rewards. Without monthly attention, a site that ranked well at launch quietly loses ground over the following year." } },
+          { "@type": "Question", "name": "Do I need Google Business Profile management if I already have a website?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A large share of local searches never make it past the map pack and the Google Business Profile panel to your actual website. If nobody's updating photos, responding to reviews, and posting there monthly, you're invisible in the exact spot most of your customers are looking first." } },
+          { "@type": "Question", "name": "What questions should I ask before signing up for a managed website plan?", "acceptedAnswer": { "@type": "Answer", "text": "Ask exactly what happens each month, not just what's included in general terms. Ask whether updates are SEO content or just typo fixes, whether Google Business Profile is actually managed or just claimed, and what the monthly report will actually show you. If the answers are vague, the plan probably is too." } }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tracking: GA4 + Google Ads + Meta Pixel, centralized in /js/tracking.js -->
+  <script src="/js/tracking.js"></script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1285414636910501&ev=PageView&noscript=1"
+  /></noscript>
+</head>
+
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<a href="tel:3435030123" class="tap-to-call" aria-label="Call JD Media">Call Now: 343-503-0123</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo-link">
+      <img src="/images/logos/jd-media-logo.svg" alt="JD Media - Ottawa Web Design" class="logo-img">
+    </a>
+    <nav class="nav-desktop" aria-label="Main">
+      <a href="/work">Work</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/about">About</a>
+      <a href="/reviews">Reviews</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:3435030123" class="nav-phone header-cta">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        343-503-0123
+      </a>
+      <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+        <span class="menu-icon" aria-hidden="true"><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile menu" aria-hidden="true">
+  <div class="mobile-menu-panel" data-menu-panel>
+    <div class="mobile-menu-top">
+      <a href="/" class="logo-link">
+        <img src="/images/logos/jd-media-logo.svg" alt="JD Media - Ottawa Web Design" class="logo-img">
+      </a>
+      <button class="mobile-menu-close" type="button" aria-label="Close menu">&#x2715;</button>
+    </div>
+    <nav class="mobile-menu-nav" aria-label="Mobile">
+      <a href="/work">Work</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/about">About</a>
+      <a href="/reviews">Reviews</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="tel:3435030123">343-503-0123</a>
+      <a href="mailto:jd@jdaitken.ca">jd@jdaitken.ca</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <div class="post-breadcrumbs">
+    <div class="container">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="/blog/">Blog</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">What Professional Website Management Actually Includes</span>
+    </div>
+  </div>
+
+  <header class="post-hero">
+    <div class="container">
+      <span class="tag">Website Management</span>
+      <h1>What Professional Website Management Actually Includes Month to Month</h1>
+      <div class="post-meta">
+        <time datetime="2026-10-01">October 1, 2026</time>
+        <span class="meta-sep" aria-hidden="true">·</span>
+        <span>By JD Aitken</span>
+        <span class="meta-sep" aria-hidden="true">·</span>
+        <span>5 min read</span>
+      </div>
+    </div>
+  </header>
+
+  <figure class="post-feature-image">
+    <img src="/images/blog/professional-website-management-what-it-includes.jpg"
+         alt="Ottawa trade business owner reviewing his website on a laptop in his workshop"
+         width="1200" height="627"
+         loading="eager">
+    <span class="post-feature-credit">Photo by Ivan S on Pexels</span>
+  </figure>
+
+  <div class="post-body">
+    <div class="container">
+      <article class="post-content">
+
+        <p>A website is not a filing cabinet. Put something in it once and it doesn't just sit there safely, ready whenever someone opens the drawer. It ages. Competitors update their pages, Google changes what it rewards, and a site that ranked well at launch quietly loses ground over the following year if nobody touches it again.</p>
+        <p>That's the gap "website management" is supposed to fill. In practice, the term covers everything from a real monthly service to a hosting bill with a markup and a nicer name. Here's what should actually be happening behind that invoice.</p>
+
+        <h2>Hosting and Security Are the Floor, Not the Whole Job</h2>
+        <p>Hosting, SSL, and domain renewal should be handled without you thinking about it. That part is table stakes. If a plan stops there, you're paying for maintenance, not growth, and the price should reflect that.</p>
+        <p>The real value starts above the floor: is anything happening to help people actually find the site?</p>
+
+        <h2>Monthly Content Should Target Real Searches, Not Just Exist</h2>
+        <p>A blog post that goes up because the plan promises "monthly content" isn't the same as a page built around a question your customers are actually typing into Google. One targets a keyword with real search volume and a clear intent. The other is filler that pads a report.</p>
+        <p>Ask what the last three months of content actually targeted, and whether anyone checked search demand before writing it. If the answer is vague, the content is probably vague too.</p>
+
+        <h2>Google Business Profile Work Is Not Optional</h2>
+        <p>A large share of local searches resolve entirely inside the map pack and the profile panel, before anyone clicks through to a website at all. <a href="https://support.google.com/business/answer/7107242" target="_blank" rel="noopener">Google explains what a complete profile needs to include</a> to show up properly, and <a href="https://www.google.com/intl/en_us/search/howsearchworks/how-search-works/ranking-results/" target="_blank" rel="noopener">relevance, distance, and prominence are the three factors Google names directly</a> as driving what gets shown for a local search.</p>
+        <p>If nobody's posting updates, responding to reviews, and keeping photos current on your profile every month, that's a real gap, not a minor one. It's often the single highest-leverage thing a managed plan can do for a local business, and it's worth reading more about <a href="/blog/google-business-profile-ottawa-contractors/">how Ottawa contractors actually get found through their Google Business Profile</a>.</p>
+
+        <h2>A Report Should Show What Happened, Not Just That Something Did</h2>
+        <p>A managed plan should tell you, in plain terms, how many people found the site and what they did next. Not a dashboard full of numbers nobody explained. A short answer to the question that actually matters: is this working?</p>
+        <p>If a report can't answer that in the first paragraph, it's built to look busy rather than to inform you.</p>
+
+        <h2>What This Looks Like Together</h2>
+        <p>None of these pieces does much alone. A well-built site with no ongoing SEO drifts down the results. An active Google Business Profile pointing at a slow, dated site converts poorly once someone clicks through. Managed properly, hosting, content, and the profile work as one system, each one making the others perform better than they would on their own.</p>
+        <p>That's the actual job behind "professional website management." Read more about <a href="/website-management/">what's included in a managed plan</a>, see how it plays out for <a href="/blog/website-that-generates-calls-local-trades/">a local trade business specifically</a>, or check <a href="/local-seo/">local SEO for Ottawa trades</a> if ranking is the piece you're missing.</p>
+        <p>If a plan can't tell you what happens in month two, ask before you sign up for month one.</p>
+
+        <div class="post-cta">
+          <h3>Want to see what your current plan is actually doing?</h3>
+          <p>I'll look at your site, your Google Business Profile, and whatever reporting you're getting now, and tell you plainly what's working and what's missing. No sales pitch.</p>
+          <a href="/contact" class="btn btn-primary">Get My Free Site Audit</a>
+        </div>
+
+      </article>
+
+      <section class="post-faq" aria-label="Frequently asked questions">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="post-faq-item">
+          <h3>What's included in professional website management?</h3>
+          <p>At minimum, it should include hosting, SSL, and domain management, monthly content or SEO updates targeting real searches, Google Business Profile management, and a report showing what actually happened. Anything less than that is just paid hosting with a nicer name.</p>
+        </div>
+        <div class="post-faq-item">
+          <h3>How much should website management cost per month?</h3>
+          <p>For an Ottawa trade or local service business, a properly managed plan that includes the site, SEO, and Google Business Profile typically runs a few hundred dollars a month. A bare hosting-only plan costs less but does none of the ranking work, so the comparison isn't apples to apples.</p>
+        </div>
+        <div class="post-faq-item">
+          <h3>Is a one-time website build enough, or do I need ongoing management?</h3>
+          <p>A one-time build gets you a site that exists. It doesn't get you a site that keeps ranking, because search results shift as competitors update their pages and Google adjusts what it rewards. Without monthly attention, a site that ranked well at launch quietly loses ground over the following year.</p>
+        </div>
+        <div class="post-faq-item">
+          <h3>Do I need Google Business Profile management if I already have a website?</h3>
+          <p>Yes. A large share of local searches never make it past the map pack and the Google Business Profile panel to your actual website. If nobody's updating photos, responding to reviews, and posting there monthly, you're invisible in the exact spot most of your customers are looking first.</p>
+        </div>
+        <div class="post-faq-item">
+          <h3>What questions should I ask before signing up for a managed website plan?</h3>
+          <p>Ask exactly what happens each month, not just what's included in general terms. Ask whether updates are SEO content or just typo fixes, whether Google Business Profile is actually managed or just claimed, and what the monthly report will actually show you. If the answers are vague, the plan probably is too.</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo-link">
+          <img src="/images/logos/jd-media-logo.svg" alt="JD Media" class="logo-img">
+        </a>
+        <p>Websites Ottawa trades businesses get their calls from.</p>
+        <p>Ottawa, ON</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/reviews">Reviews</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/local-seo/">Local SEO</a></li>
+          <li><a href="/ottawa-web-design/">Ottawa Web Design</a></li>
+          <li><a href="/website-management/">Website Management</a></li>
+          <li><a href="/kanata-web-design/">Kanata Web Design</a></li>
+          <li><a href="/nepean-web-design/">Nepean Web Design</a></li>
+          <li><a href="/orleans-web-design/">Orl&eacute;ans Web Design</a></li>
+          <li><a href="/barrhaven-web-design/">Barrhaven Web Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:3435030123">343-503-0123</a></li>
+          <li><a href="mailto:jd@jdaitken.ca">jd@jdaitken.ca</a></li>
+          <li><a href="/contact">Get a Quote</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Find us</h4>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/VfX5TZv4sw8MnzpP8" target="_blank" rel="noopener">Google Business Profile</a></li>
+          <li><a href="https://www.linkedin.com/company/jd-media-ottawa" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/jdmediahq" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/jdmediahq/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://clutch.co/profile/jd-media" target="_blank" rel="noopener">Clutch</a></li>
+          <li><a href="https://www.trustpilot.com/review/jdaitken.ca" target="_blank" rel="noopener">Trustpilot</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 JD Media. Websites that get you more calls.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+
+</body>
+</html>
