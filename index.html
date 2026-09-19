@@ -80,12 +80,14 @@
       align-items: center;
     }
 
+    /* image hero retired (two-column at >=900px):
     @media (min-width: 900px) {
       .hero-grid {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
         gap: var(--space-3xl);
       }
     }
+    */
 
     .hero-content {
       text-align: left;
@@ -97,7 +99,7 @@
     }
 
     .hero h1 {
-      font-size: clamp(2.75rem, 11.5vw, 3.75rem);
+      font-size: clamp(2.75rem, 9vw, 6rem);
       line-height: 1.0;
       letter-spacing: -0.04em;
       margin-bottom: var(--space-lg);
@@ -131,12 +133,50 @@
       color: var(--color-text-muted);
       line-height: var(--leading-snug);
       margin-bottom: var(--space-xl);
-      max-width: 480px;
+      max-width: 560px;
+      text-wrap: balance;
     }
 
     @media (min-width: 768px) {
       .hero-subtitle {
         font-size: var(--text-lg);
+      }
+    }
+
+    /* Hero proof row: the numbers do the persuading, set in the display face */
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-md);
+      margin-top: var(--space-md);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .hero-stat-num {
+      display: block;
+      font-family: var(--font-display);
+      font-weight: var(--font-bold);
+      font-size: clamp(2.25rem, 8vw, 4.75rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--color-text);
+    }
+
+    .hero-stat-label {
+      display: block;
+      margin-top: var(--space-sm);
+      max-width: 24ch;
+      font-size: var(--text-sm);
+      line-height: var(--leading-snug);
+      color: var(--color-text-muted);
+    }
+
+    @media (min-width: 768px) {
+      .hero-stats { gap: var(--space-xl); }
+      .hero-stat + .hero-stat {
+        padding-left: var(--space-xl);
+        border-left: 1px solid var(--color-border);
       }
     }
 
@@ -481,9 +521,26 @@
         <p class="hero-subtitle">Fast, fully managed websites for Ottawa contractors that turn Google searches into phone calls. Setup waived on a 12-month plan.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary open-audit-modal" id="openAuditModal">Get My Free Site Audit</button>
+          <!-- Caption folded into .hero-stats below:
           <p class="hero-social-proof">17 quote requests in July 2026 &mdash; the best month yet. Legendary Landscaping, Ottawa.</p>
+          -->
         </div>
       </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">17</span>
+          <span class="hero-stat-label">quote requests in July 2026, Legendary Landscaping</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">$42</span>
+          <span class="hero-stat-label">per quote request from Google Ads, same month</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">1 wk</span>
+          <span class="hero-stat-label">from first call to live site, J&amp;J Remodeling</span>
+        </div>
+      </div>
+      <!-- Image hero retired: small dark screenshot competed with the headline; the proof now lives in .hero-stats.
       <a class="hero-visual" href="/work/legendary-landscaping/" aria-label="Read the Legendary Landscaping case study">
         <picture>
           <source type="image/webp"
@@ -498,6 +555,7 @@
             fetchpriority="high" decoding="async">
         </picture>
       </a>
+      -->
       </div>
     </div>
   </section>
