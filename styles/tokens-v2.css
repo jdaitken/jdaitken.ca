@@ -15,7 +15,7 @@
   --color-text-muted: #5F7188;      /* Navy-toned muted text (WCAG AA on bg) */
   --color-border: #E0E6ED;          /* Navy-tinted borders/dividers */
   
-  /* Accent Colors — signal red, rationed: one primary CTA per screen + key numbers */
+  /* Accent Colors — signal red, rationed: one primary CTA per screen, nothing else */
   /* v2 coral values:
   --color-accent: #FF6B6B;
   --color-accent-hover: #E85D5D;

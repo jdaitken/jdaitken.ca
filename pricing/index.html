@@ -69,7 +69,7 @@
     @media (min-width: 640px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); } }
 
     .pricing-card { border: 1px solid var(--color-border); border-radius: var(--card-radius); /* v2: radius-lg */ padding: var(--space-xl); display: flex; flex-direction: column; background: var(--color-surface); }
-    .pricing-card.featured { border-color: var(--color-accent); border-width: 2px; position: relative; }
+    .pricing-card.featured { border-color: var(--color-text); border-width: 2px; position: relative; }
     .pricing-badge { position: absolute; top: calc(-1 * var(--space-sm)); left: 50%; transform: translateX(-50%); }
 
     .pricing-card h3 { font-size: var(--text-xl); margin-bottom: var(--space-xs); }
@@ -158,7 +158,7 @@
     .final-cta { background: var(--color-text); color: var(--color-bg); text-align: center; }
     .final-cta h2 { color: var(--color-bg); margin-bottom: var(--space-sm); }
     .final-cta p { color: var(--color-text-on-navy); /* v2: text-muted, 2.3:1 on navy */ font-size: var(--text-lg); margin-bottom: var(--space-xl); max-width: 480px; margin-left: auto; margin-right: auto; }
-    .final-cta .btn-primary { background: var(--color-accent); color: var(--color-text); }
+    .final-cta .btn-primary { background: var(--color-accent); color: var(--color-surface); }
     .final-cta .btn-primary:hover { background: var(--color-accent-hover); }
 
     .site-footer { border-top: 1px solid var(--color-border); padding: var(--space-2xl) 0; }
@@ -844,7 +844,7 @@
         <p class="modal-error" id="auditError" hidden></p>
         <div class="modal-form-footer">
           <p class="modal-note">Replies within 1 business day &middot; No obligation.</p>
-          <button type="submit" class="btn btn-primary modal-submit">Get in Touch</button>
+          <button type="submit" class="btn btn-primary modal-submit">Get My Free Site Audit</button>
         </div>
       </form>
     </div>
