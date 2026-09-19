@@ -96,3 +96,18 @@ None of this is severe. Nothing found here would stop a visitor from calling. Bu
 `CLAUDE.md`, `index.html`, `about/index.html`, `pricing/index.html`, `work/index.html`, `work/legendary-landscaping/index.html`, `ottawa-web-design/index.html`, `lp/index.html`, `hi/index.html`, `privacy/index.html`
 
 Nothing has been deployed. Review the diff, then `git push origin main` when ready — GitHub Actions handles the rest.
+
+
+---
+
+## Update 2026-09-19 — judgment calls resolved
+
+| # | Resolution |
+|---|---|
+| 7, 8, 9 | **Enforce strictly.** Red is the CTA only. Featured borders on `/about/` and `/pricing/` are navy, the `/lp/` stat is navy, and `tokens-v2.css` now reads "one primary CTA per screen, nothing else". |
+| 10 | Guarantee moved to a `.guarantee-band` directly above the final CTA on `/about/`. |
+| 11 | Audit-modal submit and the `/reviews/` closer now read "Get My Free Site Audit". |
+
+Also fixed in the same pass: navy-on-red text (2.35:1) on the final-CTA button of five pages is now white (4.91:1); `/about/` hero photo 2.4MB → 49KB; internal `.md` files, `_archive/` and `package.json` no longer deploy to the public site; the shared header/footer/modal/FAQ CSS is now `styles/chrome-v2.css` on 18 of 23 pages.
+
+Still open: the active nav link (`.nav-desktop a.active`) is red on every page. That is a second decorative use of red under the strict rule; changing it means editing one line in `chrome-v2.css`.

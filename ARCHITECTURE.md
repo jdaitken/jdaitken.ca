@@ -37,13 +37,18 @@ privacy/index.html
 arlene/index.html   ← noindex personal mini-app (not part of main site)
 ```
 
-## CSS design system (three-layer)
+## CSS design system (four-layer)
 
-Load in this order, all three required on every page:
+Load in this order. The first three are required on every page:
 
 1. `styles/tokens-v2.css` — CSS custom properties (colors, spacing, typography, shadows).
 2. `styles/base-v2.css` — Resets, global typography, element defaults.
 3. `styles/components-v2.css` — Reusable UI components referencing token variables.
+4. `styles/chrome-v2.css` — Shared page chrome: header, mobile menu, footer, audit modal, FAQ,
+   guarantee band, case-study cards, final CTA, tap-to-call. Linked (in place of an inline
+   `<style>`) on every page except `/about/`, `/lp/`, `/hi/`, `/thanks/`, `/wyman/`, which keep
+   their own inline CSS. **Fix chrome bugs here once**, not per page. Anything page-specific
+   still lives in that page's inline `<style>`, which loads after it and wins.
 
 ## JavaScript
 
