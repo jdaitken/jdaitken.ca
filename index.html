@@ -314,22 +314,50 @@
       }
     }
 
+    /* v3 hero: two-column, left-aligned copy + Legendary Landscaping site preview.
+       Was a single centred 960px column (max-width 960px, text-align center, h1 clamp(3.75rem, 8.5vw, 5.5rem)). */
+    .hero-grid {
+      display: grid;
+      gap: var(--space-2xl);
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+        gap: var(--space-3xl);
+      }
+    }
+
     .hero-content {
-      max-width: 960px;
-      margin: 0 auto;
-      text-align: center;
+      text-align: left;
     }
 
     .hero .kicker {
-      text-align: center;
+      text-align: left;
       margin-bottom: var(--space-md);
     }
 
     .hero h1 {
-      font-size: clamp(3.75rem, 8.5vw, 5.5rem);
+      font-size: clamp(2.75rem, 11.5vw, 3.75rem);
       line-height: 1.0;
       letter-spacing: -0.04em;
       margin-bottom: var(--space-lg);
+    }
+
+    .hero-visual {
+      display: block;
+      border: 1px solid var(--color-border);
+      border-radius: var(--card-radius);
+      overflow: hidden;
+      background: var(--color-surface);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     .hero h1 .text-accent {
@@ -345,9 +373,7 @@
       color: var(--color-text-muted);
       line-height: var(--leading-snug);
       margin-bottom: var(--space-xl);
-      max-width: 560px;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 480px;
     }
 
     @media (min-width: 768px) {
@@ -360,7 +386,7 @@
     .hero-actions {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       gap: var(--space-lg);
     }
 
@@ -373,7 +399,7 @@
       border-top: 1px solid var(--color-border);
       width: 100%;
       max-width: 480px;
-      text-align: center;
+      text-align: left;
     }
 
     /* .hero-stars unused since hero proof line dropped the star rating (incoherent next to a
@@ -1055,6 +1081,7 @@
   <!-- 1. Hero -->
   <section class="hero">
     <div class="container">
+      <div class="hero-grid">
       <div class="hero-content">
         <span class="kicker"><a href="/ottawa-web-design/" style="color: inherit; text-decoration: none;">Ottawa web design</a> &middot; local SEO</span>
         <h1>Websites that get you more&nbsp;calls.</h1>
@@ -1065,6 +1092,21 @@
           <button type="button" class="btn btn-primary open-audit-modal" id="openAuditModal">Get My Free Site Audit</button>
           <p class="hero-social-proof">17 quote requests in July 2026 &mdash; the best month yet. Legendary Landscaping, Ottawa.</p>
         </div>
+      </div>
+      <a class="hero-visual" href="/work/legendary-landscaping/" aria-label="Read the Legendary Landscaping case study">
+        <picture>
+          <source type="image/webp"
+            srcset="/images/projects/legendary-landscaping-update-1200.webp 1200w, /images/projects/legendary-landscaping-update-1900.webp 1900w"
+            sizes="(max-width: 899px) 92vw, 600px">
+          <img
+            src="/images/projects/legendary-landscaping-update-1200.png"
+            srcset="/images/projects/legendary-landscaping-update-1200.png 1200w, /images/projects/legendary-landscaping-update-1900.png 1900w"
+            sizes="(max-width: 899px) 92vw, 600px"
+            alt="Legendary Landscaping website, rebuilt by JD Media"
+            width="1200" height="625"
+            fetchpriority="high" decoding="async">
+        </picture>
+      </a>
       </div>
     </div>
   </section>
@@ -1271,6 +1313,9 @@
   <!-- Google Reviews -->
   <section class="reviews-section">
     <div class="container">
+      <div class="section-header">
+        <h2>What clients say</h2>
+      </div>
       <div class="reviews-header">
         <img src="/images/logos/Google-Review-Logo.png" alt="Google Reviews" width="160" height="53">
         <div class="reviews-rating-row">
