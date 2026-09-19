@@ -183,7 +183,7 @@
   <meta property="og:url" content="https://jdaitken.ca/about/">
   <meta property="og:title" content="About JD Media | Websites That Get Ottawa Trades More Calls">
   <meta property="og:description" content="I'm JD Aitken. I build and run the websites Ottawa trades businesses get their calls from. One person, full accountability, backed by a 90-day guarantee.">
-  <meta property="og:image" content="https://jdaitken.ca/images/jd-aitken.png">
+  <meta property="og:image" content="https://jdaitken.ca/images/jd-aitken-1024.jpg">
   <meta property="og:site_name" content="JD Media">
   <meta property="og:locale" content="en_CA">
   <meta name="twitter:card" content="summary_large_image">
@@ -212,7 +212,7 @@
         "description": "Ottawa-based web designer specializing in mobile-first websites that get local service businesses more calls and quote requests. Founder of JD Media.",
         "email": "jd@jdaitken.ca",
         "telephone": "+13435030123",
-        "image": "https://jdaitken.ca/images/jd-aitken.png",
+        "image": "https://jdaitken.ca/images/jd-aitken-1024.jpg",
         "url": "https://jdaitken.ca/about",
         "address": {
           "@type": "PostalAddress",
@@ -344,7 +344,14 @@
     <div class="container">
       <div class="about-hero-grid">
         <div class="about-photo">
-          <img src="/images/jd-aitken.png" alt="JD Aitken, founder of JD Media" style="width:100%;height:100%;object-fit:cover;">
+          <picture>
+            <source type="image/webp"
+              srcset="/images/jd-aitken-640.webp 640w, /images/jd-aitken-1024.webp 1024w"
+              sizes="(max-width: 768px) 92vw, 486px">
+            <img src="/images/jd-aitken-1024.jpg" alt="JD Aitken, founder of JD Media"
+              width="1024" height="1536" fetchpriority="high" decoding="async"
+              style="width:100%;height:100%;object-fit:cover;">
+          </picture>
         </div>
         <div class="about-intro">
           <span class="hero-eyebrow">Ottawa Web Design</span>
