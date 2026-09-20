@@ -39,6 +39,8 @@
     .rating-summary span.count { font-size: var(--text-sm); color: var(--color-text-muted); }
 
     .reviews-section { background: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
+    /* Show every review in full here; the shared 6-line clamp in components-v2.css cut Dashie's mid-sentence. */
+    .reviews-grid .review-text { display: block; -webkit-line-clamp: unset; overflow: visible; }
     .reviews-source-note { text-align: center; margin-top: var(--space-xl); font-size: var(--text-sm); color: var(--color-text-muted); }
     .reviews-source-note a { color: var(--color-accent); font-weight: var(--font-medium); }
 
@@ -207,6 +209,46 @@
         <div class="review-card">
           <div class="review-card-header">
             <div>
+              <div class="review-author-name">Jason Floccari</div>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <p class="review-text">&ldquo;JD built our new site and set up our Google profile. We went from barely getting calls to quote requests coming in most weeks. He handles everything and sends a report every month so I actually know what&rsquo;s happening. Easy to deal with.&rdquo;</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div>
+              <div class="review-author-name">Anna Tomczak</div>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <p class="review-text">&ldquo;Site was invisible on Google. JD rebuilt it, fixed our business profile, and we&rsquo;re getting calls from people who found us searching. He picks up the phone when I call. Worth it.&rdquo;</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div>
+              <div class="review-author-name">Dashie Kaur</div>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <p class="review-text">&ldquo;We hired JD to build a website for our remodeling business and the whole process was smooth from start to finish. He took care of everything &mdash; the site looks clean and professional, our Google Business Profile is set up properly, and we actually showed up on Google Maps right away. JD was easy to communicate with, delivered exactly what he promised, and clearly knows what he&rsquo;s doing when it comes to getting local businesses found online. We&rsquo;d recommend him to any contractor or trades business in Ottawa looking for a website or SEO&rdquo;</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div>
+              <div class="review-author-name">Blair</div>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <p class="review-text">&ldquo;Really happy with my new website. JD Media delivered exactly what I was looking for, and the whole process was smooth and stress-free. Would definitely recommend.&rdquo;</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div>
               <div class="review-author-name">Patrick Damiani</div>
               <div class="review-author-location">Ottawa, ON</div>
             </div>
@@ -238,7 +280,44 @@
         </div>
 
       </div>
-      <p class="reviews-source-note">These three are quoted here with permission. The full set, including four more without a featured quote yet, is on the live listing: <a href="https://maps.app.goo.gl/VfX5TZv4sw8MnzpP8" target="_blank" rel="noopener">view JD Media on Google Maps</a>.</p>
+      <p class="reviews-source-note">All seven Google reviews are shown here, and each is on the live listing: <a href="https://maps.app.goo.gl/VfX5TZv4sw8MnzpP8" target="_blank" rel="noopener">view JD Media on Google Maps</a>.</p>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <div class="container">
+      <div class="reviews-header">
+        <h2>Clutch</h2>
+        <div class="reviews-rating-row">
+          <span class="review-count">2 verified client reviews</span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div>
+              <div class="review-author-name">Owner, Legendary Landscaping</div>
+              <div class="review-author-location">Clutch review, June 2026</div>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <p class="review-text">&ldquo;JD Media&rsquo;s ideas on what we can do next to bring in more business are impressive.&rdquo;</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div>
+              <div class="review-author-name">Owner, Capital City Cards</div>
+              <div class="review-author-location">Clutch review, April 2026</div>
+            </div>
+            <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <p class="review-text">&ldquo;JD media was very prompt in responding to my queries and made me feel at ease.&rdquo;</p>
+        </div>
+
+      </div>
+      <p class="reviews-source-note">Read the full reviews on <a href="https://clutch.co/profile/jd-media#reviews" target="_blank" rel="noopener">JD Media&rsquo;s Clutch profile</a>.</p>
     </div>
   </section>
 
