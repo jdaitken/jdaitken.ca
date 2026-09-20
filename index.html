@@ -35,9 +35,10 @@
       padding: var(--space-3xl) 0;
       background-color: var(--color-bg);
       position: relative;
-      overflow: hidden;
+      /* overflow: hidden; -- only existed to clip the decorative circles below */
     }
 
+    /* Decorative circles retired: both were background: none (brand "no gradients" rule), so they rendered nothing.
     .hero::before,
     .hero::after {
       content: '';
@@ -53,7 +54,7 @@
       height: 55vw;
       max-width: 700px;
       max-height: 700px;
-      background: none; /* gradient glow removed per brand "no gradients" rule */
+      background: none; (gradient glow removed per brand "no gradients" rule)
     }
 
     .hero::after {
@@ -63,8 +64,9 @@
       height: 48vw;
       max-width: 620px;
       max-height: 620px;
-      background: none; /* gradient glow removed per brand "no gradients" rule */
+      background: none; (gradient glow removed per brand "no gradients" rule)
     }
+    */
 
     @media (min-width: 768px) {
       .hero {
@@ -93,10 +95,12 @@
       text-align: left;
     }
 
+    /* Kicker removed from the hero markup.
     .hero .kicker {
       text-align: left;
       margin-bottom: var(--space-md);
     }
+    */
 
     .hero h1 {
       font-size: clamp(2.75rem, 9vw, 6rem);
@@ -105,6 +109,7 @@
       margin-bottom: var(--space-lg);
     }
 
+    /* Image hero retired, markup already commented out.
     .hero-visual {
       display: block;
       border: 1px solid var(--color-border);
@@ -123,6 +128,7 @@
     .hero h1 .text-accent {
       display: block;
     }
+    */
 
     .text-accent {
       color: var(--color-accent);
@@ -143,7 +149,7 @@
       }
     }
 
-    /* Hero proof row: the numbers do the persuading, set in the display face */
+    /* Hero stats bar retired (markup commented out above).
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -179,6 +185,33 @@
         border-left: 1px solid var(--color-border);
       }
     }
+    */
+
+    /* Hero proof line: one sentence of proof under the CTA */
+    .hero-proof {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin: var(--space-xl) 0 0;
+      font-size: var(--text-base);
+      color: var(--color-text-secondary);
+    }
+
+    .hero-proof a {
+      color: var(--color-text);
+      font-weight: var(--font-semibold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .hero-proof a:hover {
+      color: var(--color-accent);
+    }
+
+    .hero-proof a:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 3px;
+    }
 
     /* Hero CTA row */
     .hero-actions {
@@ -188,6 +221,7 @@
       gap: var(--space-lg);
     }
 
+    /* Markup already commented out.
     .hero-social-proof {
       font-size: var(--text-sm);
       color: var(--color-text-muted);
@@ -199,6 +233,7 @@
       max-width: 480px;
       text-align: left;
     }
+    */
 
     /* .hero-stars unused since hero proof line dropped the star rating (incoherent next to a
        quote-request stat; the real 5.0 Google rating lives in the reviews section instead) —
@@ -514,18 +549,26 @@
     <div class="container">
       <div class="hero-grid">
       <div class="hero-content">
+        <!-- Kicker removed: the subtitle already says what and for whom; /ottawa-web-design/ is still linked from every footer.
         <span class="kicker"><a href="/ottawa-web-design/" style="color: inherit; text-decoration: none;">Ottawa web design</a> &middot; local SEO</span>
+        -->
         <h1>Websites that get you more&nbsp;calls.</h1>
         <!-- v2 hero: <h1>Websites that get you more calls.<span class="text-accent">Guaranteed.</span></h1> — guarantee moved to the closer, see guarantee-band -->
 
-        <p class="hero-subtitle">Fast, fully managed websites for Ottawa contractors that turn Google searches into phone calls. Setup waived on a 12-month plan.</p>
+        <!-- "Setup waived on a 12-month plan." dropped from the subtitle: an offer term, already stated on /pricing/. -->
+        <p class="hero-subtitle">Fast, fully managed websites for Ottawa contractors that turn Google searches into phone calls.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-primary open-audit-modal" id="openAuditModal">Get My Free Site Audit</button>
           <!-- Caption folded into .hero-stats below:
           <p class="hero-social-proof">17 quote requests in July 2026 &mdash; the best month yet. Legendary Landscaping, Ottawa.</p>
           -->
         </div>
+        <p class="hero-proof" aria-label="Rated 5.0 out of 5 from 7 Google reviews">
+          <span class="review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <a href="/reviews/">5.0 from 7 Google reviews</a>
+        </p>
       </div>
+      <!-- Stats bar retired: three numerals nobody parses ($42/quote is agency-brain; Aug data made 17 and $42 both worse).
       <div class="hero-stats">
         <div class="hero-stat">
           <span class="hero-stat-num">17</span>
@@ -540,7 +583,8 @@
           <span class="hero-stat-label">from first call to live site, J&amp;J Remodeling</span>
         </div>
       </div>
-      <!-- Image hero retired: small dark screenshot competed with the headline; the proof now lives in .hero-stats.
+      -->
+      <!-- Image hero retired: small dark screenshot competed with the headline.
       <a class="hero-visual" href="/work/legendary-landscaping/" aria-label="Read the Legendary Landscaping case study">
         <picture>
           <source type="image/webp"
@@ -770,6 +814,7 @@
         <div class="reviews-rating-row">
           <strong>5.0</strong>
           <span class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="review-count">from 7 Google reviews</span>
         </div>
       </div>
       <div class="reviews-grid">
