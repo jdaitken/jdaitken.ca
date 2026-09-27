@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="/styles/base-v2.css">
   <link rel="stylesheet" href="/styles/components-v2.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonts self-hosted via @font-face in tokens-v2.css. Was: <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> -->
+  <link rel="preload" href="/fonts/barlow-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="/styles/chrome-v2.css">
 
@@ -158,12 +158,12 @@
 
 <a href="#main" class="skip-link">Skip to content</a>
 
-<a href="tel:3435030123" class="tap-to-call" aria-label="Call JD Media">Call Now: 343-503-0123</a>
+<a href="tel:3435030123" class="tap-to-call">Call Now: 343-503-0123</a>
 
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="logo-link">
-      <img src="/images/logos/jd-media-logo.svg" alt="JD Media - Ottawa Web Design" class="logo-img">
+      <img src="/images/logos/jd-media-logo.svg" width="354" height="101" alt="JD Media - Ottawa Web Design" class="logo-img">
     </a>
     <nav class="nav-desktop" aria-label="Main">
       <a href="/work">Work</a>
@@ -189,7 +189,7 @@
   <div class="mobile-menu-panel" data-menu-panel>
     <div class="mobile-menu-top">
       <a href="/" class="logo-link">
-        <img src="/images/logos/jd-media-logo.svg" alt="JD Media - Ottawa Web Design" class="logo-img">
+        <img src="/images/logos/jd-media-logo.svg" width="354" height="101" alt="JD Media - Ottawa Web Design" class="logo-img">
       </a>
       <button class="mobile-menu-close" type="button" aria-label="Close menu">&#x2715;</button>
     </div>
@@ -500,13 +500,13 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="/" class="logo-link">
-          <img src="/images/logos/jd-media-logo.svg" alt="JD Media" class="logo-img">
+          <img src="/images/logos/jd-media-logo.svg" width="354" height="101" alt="JD Media" class="logo-img">
         </a>
         <p>Websites Ottawa trades businesses get their calls from.</p>
         <p>Ottawa, ON</p>
       </div>
       <div class="footer-links">
-        <h4>Pages</h4>
+        <h3>Pages</h3>
         <ul>
           <li><a href="/work">Work</a></li>
           <li><a href="/pricing">Pricing</a></li>
@@ -523,7 +523,7 @@
         </ul>
       </div>
       <div class="footer-links">
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <ul>
           <li><a href="tel:3435030123">343-503-0123</a></li>
           <li><a href="mailto:jd@jdaitken.ca">jd@jdaitken.ca</a></li>
@@ -532,7 +532,7 @@
         </ul>
       </div>
       <div class="footer-links">
-        <h4>Find us</h4>
+        <h3>Find us</h3>
         <ul>
           <li><a href="https://maps.app.goo.gl/VfX5TZv4sw8MnzpP8" target="_blank" rel="noopener">Google Business Profile</a></li>
           <li><a href="https://www.linkedin.com/company/jd-media-ottawa" target="_blank" rel="noopener">LinkedIn</a></li>

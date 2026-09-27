@@ -109,6 +109,8 @@
     .problem-inner { max-width: 600px; margin: 0 auto; text-align: center; }
     .problem-inner p { font-size: var(--text-lg); color: rgba(255, 255, 255, 0.68); line-height: var(--leading-relaxed); margin-bottom: var(--space-md); }
     .problem-inner p:last-child { margin-bottom: 0; font-weight: var(--font-bold); color: var(--color-surface); font-size: var(--text-xl); }
+    /* Red link text on the navy band was 1.7:1 — use the band's own text colour, underlined */
+    .problem-inner a { color: var(--color-surface); text-decoration: underline; text-underline-offset: 2px; }
 
     /* Positioning / story */
     .story-section { background: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); }
@@ -191,7 +193,7 @@
     .footer-inner { display: grid; gap: var(--space-xl); }
     @media (min-width: 768px) { .footer-inner { grid-template-columns: 2fr 1fr 1fr 1fr; } }
     .footer-brand p { font-size: var(--text-sm); color: var(--color-text-muted); }
-    .footer-links h4 { font-size: var(--text-sm); font-weight: var(--font-semibold); margin-bottom: var(--space-md); color: var(--color-text); }
+    .footer-links h3, .footer-links h4 { font-size: var(--text-sm); font-weight: var(--font-semibold); margin-bottom: var(--space-md); color: var(--color-text); }
     .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: var(--space-sm); }
     .footer-links a { font-size: var(--text-sm); color: var(--color-text-secondary); }
     .footer-links a:hover { color: var(--color-accent); }

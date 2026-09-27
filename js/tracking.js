@@ -12,21 +12,31 @@ gtag('config', 'G-9Q56QL24ES');
 // Google Ads conversion tracking
 gtag('config', 'AW-18367499421');
 
-(function loadGtagJs() {
+// The gtag/fbq stubs above and below queue every call immediately; only the heavy vendor
+// libraries wait for window load so they don't compete with first paint. /thanks/ (where the
+// lead conversion fires) loads them right away so the conversion isn't held back.
+function jdAfterLoad(fn) {
+  if (window.location.pathname.indexOf('/thanks') === 0 || document.readyState === 'complete') fn();
+  else window.addEventListener('load', fn);
+}
+
+// Was: loadGtagJs() ran immediately — see git history.
+jdAfterLoad(function loadGtagJs() {
   var s = document.createElement('script');
   s.async = true;
   s.src = 'https://www.googletagmanager.com/gtag/js?id=G-9Q56QL24ES';
   document.head.appendChild(s);
-})();
+});
 
 // Meta Pixel
+// Stub (fbq + queue) is set up now; fbevents.js itself loads after window load.
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
+n.queue=[];jdAfterLoad(function(){t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+s.parentNode.insertBefore(t,s)})}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1285414636910501');
 fbq('track', 'PageView');

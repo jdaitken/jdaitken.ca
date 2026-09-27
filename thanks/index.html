@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="/styles/base-v2.css">
   <link rel="stylesheet" href="/styles/components-v2.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonts self-hosted via @font-face in tokens-v2.css. Was: <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> -->
+  <link rel="preload" href="/fonts/barlow-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 
   <style>
     .site-header {
@@ -75,7 +75,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="logo-link">
-      <img src="/images/logos/jd-media-logo.svg" alt="JD Media - Ottawa Web Design" class="logo-img">
+      <img src="/images/logos/jd-media-logo.svg" width="354" height="101" alt="JD Media - Ottawa Web Design" class="logo-img">
     </a>
   </div>
 </header>
