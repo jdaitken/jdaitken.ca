@@ -690,6 +690,13 @@
 
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
+    if (!form.checkValidity()) {
+      errEl.textContent = 'Please add your name, email, and phone number.';
+      errEl.hidden      = false;
+      var bad = form.querySelector(':invalid');
+      if (bad) bad.focus();
+      return;
+    }
     var btn = form.querySelector('.modal-submit');
     var origTxt = btn.textContent;
     btn.disabled = true;

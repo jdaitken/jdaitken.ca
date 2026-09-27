@@ -341,6 +341,13 @@
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     errEl.classList.remove('is-visible');
+    if (!form.checkValidity()) {
+      errEl.textContent = 'Please add your name and phone number.';
+      errEl.classList.add('is-visible');
+      var bad = form.querySelector(':invalid');
+      if (bad) bad.focus();
+      return;
+    }
 
     var btn = form.querySelector('button[type="submit"]');
     var orig = btn.textContent;
