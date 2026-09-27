@@ -57,8 +57,8 @@ Includes:
 - Up to 3 updates per month
 - I respond within 1 business day
 
-Value anchor: a custom build like this runs $2,000+ as a one-time project elsewhere. Setup fee:
-see "Setup fee" below — waived, not $0, and tied to the 12-month term.
+Value anchor: a custom build like this runs $2,000+ as a one-time project elsewhere. Here it's
+included — no setup fee (see "Setup fee" below).
 
 ### Pro — $900/month — *anchor tier*
 
@@ -110,6 +110,18 @@ shouldn't be the first thing a prospect sees.
 
 ## Setup fee
 
+**None, since 2026-09-27.** The custom build is included in the monthly plan, and nothing is owed
+if a client leaves early. Client-facing line: *"No setup fee, no contract."*
+
+- Why: Wyman Contracting stalled on trust — "I can't afford to pay someone to do nothing again
+  and walk away with my money." A 12-month term with a $1,500 clawback reads as exactly that risk
+  to a burned owner. JD chose trust over contractual protection: the build cost is carried by
+  JD, and clients are kept by getting them calls. Matches `ops/agreements/terms.md` v2.0.
+- Tradeoff, accepted knowingly: a client who leaves after 2-3 months leaves JD under water on the
+  build. Annual prepay (below) is the answer for a client who wants a discount; it is not a
+  requirement.
+
+<!-- Superseded 2026-09-27 — kept per the no-delete rule:
 **$1,500, waived in full on a 12-month commitment.** Applies to Growth and Pro. Replaces the old
 bare "setup is $0" line — the fee is real, it's just paid in commitment instead of cash.
 
@@ -122,6 +134,8 @@ bare "setup is $0" line — the fee is real, it's just paid in commitment instea
   covers the build cost if a client leaves early. A full custom build plus several months of
   active SEO/GBP/content work, collected at $275-500/month, does not break even inside a single
   season.
+
+-->
 
 ## Seasonality
 
@@ -186,13 +200,14 @@ fine print, no risk.
 
 ## Terms
 
-- **12-month minimum term**, then fully month-to-month. Cancel anytime after year one with 30
-  days written notice.
-- **Ownership — hybrid.** During the term, the site is a managed service: it's built, hosted, and
-  maintained as part of the plan, living on JD Media's infrastructure. Once a client completes
-  their 12-month minimum, they can request a free static export and take the site with them,
-  anytime, at no charge. You're never held hostage — I keep clients by getting them calls, not by
-  holding their website hostage.
+- **Month to month from day one.** No contract, no minimum term, no cancellation fee. Cancel
+  anytime with 30 days notice by email. (Was a 12-month minimum until 2026-09-27.)
+- **Ownership — the client keeps everything.** During the plan, the site is a managed service:
+  built, hosted, and maintained as part of the plan on JD Media's infrastructure. Whenever a
+  client leaves, for any reason, they get a free copy of the site, every login, and help moving
+  it. Domain, Google Business Profile, and ad accounts are always theirs. I keep clients by
+  getting them calls, not by holding their website hostage. (Was: free static export only after
+  the 12-month minimum, until 2026-09-27.)
   - Rationale: the site itself isn't the valuable, hard-to-replace part of the engagement — the
     ongoing SEO, GBP management, and content are. A static export loses the thing that actually
     produces calls (nobody's updating rankings or posting to GBP after export), so this costs JD
@@ -244,7 +259,8 @@ fine print, no risk.
   objection.** They left at $275/month — the lowest monthly rate in the book — after ~4 months,
   citing "recurring overhead" as the season wound down, not cost. They were also on legacy
   month-to-month paper with no 12-month term, no setup-fee clawback, and no seasonality clause —
-  exactly the gaps this 2026-08-10 revision closes.
+  exactly the gaps this 2026-08-10 revision closes. (2026-09-27: the
+  12-month term and clawback were since dropped as trust friction; the seasonality clause stays.)
 - **Calendar backstop on the hold:** re-evaluate this file on **2027-01-01** regardless of whether
   the non-family-close trigger below has fired. A hold shouldn't drift indefinitely just because
   the funnel that's supposed to produce triggering evidence isn't producing conversations yet.
@@ -252,6 +268,11 @@ fine print, no risk.
 ---
 
 ## Change log
+
+- 2026-09-27 — Dropped the 12-month minimum and the $1,500 waived setup fee: month to month from
+  day one, no setup fee, no cancellation fee, client gets a free copy of the site whenever they
+  leave. Prompted by Wyman Contracting's trust objection; mirrors `ops/agreements` terms v2.0
+  (plain-language rewrite). Prices unchanged. Propagated to all 13 derived files.
 
 - 2026-08-10 — Held $500/$900 (no evidence yet either way — see pricing rationale). Added a
   published Caretaker tier ($75/mo, offered directly rather than shown on pricing cards), a named
