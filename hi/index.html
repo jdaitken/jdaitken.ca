@@ -290,12 +290,12 @@
 
       <div class="form-group">
         <label class="form-label" for="hi-name">Your name</label>
-        <input id="hi-name" class="input" type="text" name="name" placeholder="Jane Smith" autocomplete="name" required>
+        <input id="hi-name" class="input" type="text" name="name" placeholder="Jane Smith" autocomplete="name" pattern=".*\S.*" required>
       </div>
 
       <div class="form-group">
         <label class="form-label" for="hi-phone">Phone number</label>
-        <input id="hi-phone" class="input" type="tel" name="phone" placeholder="613-555-0100" autocomplete="tel" required>
+        <input id="hi-phone" class="input" type="tel" name="phone" placeholder="613-555-0100" autocomplete="tel" pattern="(?:\D*\d){7,}\D*" title="A phone number with at least 7 digits" required>
       </div>
 
       <div class="form-group">

@@ -1025,9 +1025,9 @@
       <p class="modal-subhead">Drop your details and I'll reply within 1 business day. No pitch. Just an honest look at what's possible.</p>
       <form id="auditForm" novalidate>
         <div class="modal-form-grid">
-          <input type="text"  name="name"  class="modal-input" placeholder="Your name"     aria-label="Your name"     autocomplete="name"  required>
+          <input type="text"  name="name"  class="modal-input" placeholder="Your name"     aria-label="Your name"     autocomplete="name" pattern=".*\S.*" required>
           <input type="email" name="email" class="modal-input" placeholder="Email address" aria-label="Email address" autocomplete="email" required>
-          <input type="tel"   name="phone" class="modal-input modal-input-full" placeholder="Phone number" aria-label="Phone number" autocomplete="tel" required>
+          <input type="tel"   name="phone" class="modal-input modal-input-full" placeholder="Phone number" aria-label="Phone number" autocomplete="tel" pattern="(?:\D*\d){7,}\D*" title="A phone number with at least 7 digits" required>
           <textarea name="message" class="modal-input modal-input-full" placeholder="Anything you want me to know? (optional)" aria-label="Anything you want me to know? (optional)" rows="2" style="min-height:unset;resize:none"></textarea>
         </div>
         <input type="hidden" name="_subject" value="New site audit request — jdaitken.ca">
