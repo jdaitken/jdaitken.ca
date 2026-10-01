@@ -69,7 +69,7 @@ Every live form now posts to Formspree, not these endpoints:
 
 - `brand/favicon/` — all favicon sizes + apple-touch-icon
 - `images/logos/jd-media-logo.svg` — primary logo
-- `images/og-image.png` — OG/social share image
+- `images/og-image-v2.png` — OG/social share image (source: `brand/og/og-image.html`, render with `node brand/og/render.mjs`)
 
 ## Archive
 

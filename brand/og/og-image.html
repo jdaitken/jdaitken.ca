@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- Source for /images/og-image-v2.png (1200x630). Render: node brand/og/render.mjs -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/styles/tokens-v2.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-4xl) var(--space-4xl) var(--space-3xl);
+  }
+  .logo { height: 72px; width: auto; display: block; align-self: flex-start; }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: var(--font-bold);
+    font-size: 100px;
+    line-height: 1.02;
+    letter-spacing: var(--tracking-tight);
+  }
+  .band {
+    background: var(--color-text);
+    padding: 0 var(--space-4xl);
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-display);
+    font-weight: var(--font-semibold);
+    font-size: 28px;
+    color: var(--color-text-on-navy);
+  }
+  .kicker { text-transform: uppercase; letter-spacing: var(--tracking-wider); }
+  .url { color: var(--color-surface); letter-spacing: var(--tracking-wide); }
+</style>
+</head>
+<body>
+  <div class="main">
+    <img class="logo" src="/images/logos/jd-media-logo.svg" alt="JD Media">
+    <h1>Websites that get you<br>more calls.</h1>
+  </div>
+  <div class="band">
+    <span class="kicker">Ottawa web design for contractors</span>
+    <span class="url">jdaitken.ca</span>
+  </div>
+</body>
+</html>
