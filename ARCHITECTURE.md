@@ -69,7 +69,7 @@ Every live form now posts to Formspree, not these endpoints:
 
 - `brand/favicon/` — all favicon sizes + apple-touch-icon
 - `images/logos/jd-media-logo.svg` — primary logo
-- `images/og-image-v2.png` — OG/social share image (source: `brand/og/og-image.html`, render with `node brand/og/render.mjs`)
+- `images/og-image-v3.png` — OG/social share image (navy, matches the Facebook/GBP covers). Source is the brand kit: `~/code/brand/build/build.js` (`shareSpec`) → `~/code/brand/social/og/og-1200x630.png`, copied here. Previous light version: `images/og-image-v2.png`, source `brand/og/og-image.html`
 
 ## Archive
 
