@@ -33,13 +33,28 @@ want Google to send them customers — not a DIY platform, not a big agency reta
 
 ---
 
-## The offer: a GBP front door, two featured tiers, plus a caretaker floor
+## The offer: three plans, each adds one thing
 
-**Ladder (2026-10-18):** free map scan → Local $250 → Growth $500 → Pro $900. Caretaker $75 is
-retention only. Local is the low-barrier way in; Growth is the upsell once a client sees calls
-come in from the map results.
+**Ladder (2026-10-18):** free map scan → Google Profile $250 → Website + Google $500 → Website +
+Google + Ads $900. Caretaker $75 is retention only. Google Profile is the low-barrier way in;
+Website + Google is the upsell once a client sees calls come in from the map results.
 
-### Local — $250/month — *front door, GBP management only*
+**Plan names are what you get (renamed 2026-10-18).** Customer-facing names describe the
+contents so anyone can read the ladder: each plan is the one before plus one thing. The old
+internal names (Local / Growth / Pro) still appear in agreements, `clients.yaml`, and history —
+treat them as aliases:
+
+| Customer-facing name | Internal alias | Price |
+|---|---|---|
+| Google Profile | Local | $250/mo |
+| Website + Google | Growth | $500/mo |
+| Website + Google + Ads | Pro | $900/mo ($500 + $400 ads management) |
+
+Pricing page: three cards, left to right, same visual weight, one line under them ("No setup
+fee. No contract. Cancel anytime."), guarantee once at the decision point. Caretaker and
+one-time builds stay off the cards.
+
+### Google Profile (Local) — $250/month — *front door, GBP management only*
 
 **Best for:** You already have a website (or don't want to touch it yet) and want to show up
 in the Google map results when people nearby search for what you do.
@@ -62,17 +77,16 @@ Positioning: an easy yes for a one-truck owner who would balk at $500 from a str
 runs on systems JD already has (`/gbp`, `/reviews`, `/falcon`), so it costs little time per
 client. The goal is a foot in the door, not the margin.
 
-**Status:** decided 2026-10-18. On the pricing page as a quieter panel above the Growth/Pro
-cards (not a third featured card); one-line mentions elsewhere.
+**Status:** decided 2026-10-18; shown as the first of three equal cards (was briefly a quieter
+panel above two cards, 2026-10-18 same day).
 
-### Featured tiers
+### Website + Google and Website + Google + Ads
 
-Two tiers, not three, on the main pricing cards. Both include the full marketing engine (site +
-SEO + GBP) so both can honestly stand behind the guarantee. There is no website-only featured
-tier — see "Off-menu" below for that case. A third, quiet Caretaker tier exists below the cards
-as the floor for clients pausing active marketing — see that section.
+Both include the full marketing engine (site + SEO + GBP), so both carry the guarantee. There
+is no website-only plan on the cards — see "Off-menu" below. Caretaker stays off the cards —
+see that section.
 
-### Growth — $500/month — *featured, the main upsell*
+### Website + Google (Growth) — $500/month — *the main upsell*
 
 **Best for:** You want Google to send you customers without paying for ads. I build and run
 everything — the site, the rankings, the profile — so you don't have to think about it.
@@ -92,7 +106,7 @@ Includes:
 Value anchor: a custom build like this runs $2,000+ as a one-time project elsewhere. Here it's
 included — no setup fee (see "Setup fee" below).
 
-### Pro — $900/month — *anchor tier*
+### Website + Google + Ads (Pro) — $900/month — *top plan*
 
 **Best for:** You answer the phone and run jobs. I run everything that gets you customers
 online — including paid ads. You don't touch any of it.
@@ -100,10 +114,28 @@ online — including paid ads. You don't touch any of it.
 Includes:
 - Everything in Growth
 - Google Ads managed for you (you pay Google directly for ad spend; I manage everything else)
+- Recommended ad budget: at least ~$500/month, paid to Google
 - Pause your ads anytime — no penalty, no hassle
 - Quarterly 15-minute call to review what's working and what's next
 - Same-day response on any request or question
 - Priority on everything
+
+### How ads are priced — flat $400/month management
+
+Decided 2026-10-18. Ads are a **flat $400/month management fee on top of Website + Google**,
+which is what makes the $900 plan. Not a percentage of spend.
+
+- **Why flat:** easy to explain, the bill is the same every month, and JD never earns more just
+  because a client spent more — no incentive to push budget. Common small-agency alternatives
+  are a flat ~$250-500/mo or 10-20% of spend with a minimum; flat fits the brand.
+- **Ads only on top of a site JD runs.** No ads-only plan and no Google Profile + Ads combo.
+  Ads sent to a page JD can't fix cost more per click (Legendary's landing-page experience was
+  BELOW_AVERAGE across every keyword in 2026) and the client blames the ads.
+- **Ad spend is paid to Google directly**, never through JD Media. Recommend at least ~$500/mo;
+  below that, there's rarely enough click volume to learn anything.
+- **Ads off = the $400 comes off.** A client pausing ads for the season drops back to Website +
+  Google. Consistent with "the fee doesn't move with the season" — this is a scope change, not
+  a seasonal discount.
 
 ### Caretaker — $75/month — *floor tier, not featured on pricing cards*
 
@@ -307,6 +339,11 @@ fine print, no risk.
 ---
 
 ## Change log
+
+- 2026-10-18 — Renamed the plans to say what's in them: Google Profile ($250), Website + Google
+  ($500), Website + Google + Ads ($900); Local/Growth/Pro kept as internal aliases. Ads defined
+  as a flat $400/mo add-on on top of Website + Google (no % of spend, no ads-only plan).
+  Pricing page moving to three equal cards.
 
 - 2026-10-18 — Added Local ($250/mo, GBP management only) as the front door below Growth; no
   guarantee on Local. Growth/Pro/Caretaker unchanged. Propagated to all 13 derived files
