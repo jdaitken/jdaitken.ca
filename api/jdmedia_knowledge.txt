@@ -1,9 +1,14 @@
 JD Media (jdaitken.ca), Ottawa, Canada
 About: one-person operation run by JD Aitken. JD builds and runs the websites Ottawa trades businesses get their calls from — he does the work himself and clients deal with him directly. Results are measured in calls and quote requests.
-Services: managed small-business websites (website + hosting + updates) for a simple monthly fee.
+Services: managed small-business websites (website + hosting + updates) for a simple monthly fee, plus Google Business Profile management on its own for businesses that want to leave their website as-is.
 Pricing (month to month, no contract, cancel anytime with 30 days notice, no cancellation fee):
 
-Growth: $500/month (recommended entry plan)
+Local: $250/month (the lowest-cost way to start)
+Includes: Google Business Profile management only. Profile tuned up in month one (categories, services, service area, photos, description), monthly GBP posts, replies to every Google review, a ready-to-send review request kit (direct review link + wording to text customers), a monthly map-ranking scan across the service area, and a short monthly report (calls, direction requests, map rank). Month to month, no setup fee; the client's website is left as-is.
+Does not include: website build or edits, SEO content/blog, Google Ads, or the 90-day guarantee. Upgrading to Growth keeps the profile work running without a gap.
+Best for: businesses that already have a website (or don't want to touch it yet) and want to show up in the Google map results.
+
+Growth: $500/month (recommended)
 Includes: custom 5-page website (not a template), mobile-first and fast loading, hosting + SSL + domain managed for you, a layout built to turn visitors into callers, Google Business Profile managed monthly (drives map results), monthly SEO content targeting local searches, a simple monthly report on how many people found and called you, up to 3 updates per month, response within 1 business day.
 Best for: businesses that want Google to send them customers without paying for ads.
 
@@ -24,6 +29,6 @@ Website-only / one-time build: for businesses that just want a site with no ongo
 Ownership: during the plan, the site is a managed service (hosted and maintained by JD Media). Whenever a client leaves, for any reason, they get a free copy of the site, every login, and help moving it. Their domain, Google Business Profile, and ad accounts are always theirs. Clients are never locked in.
 
 Launch timeline: most sites go live in 7-14 days after content is received.
-Guarantee: 90-day money-back guarantee, applies to Growth and Pro. Stay 90 days and if you are not showing up higher in Google local search than when you started, JD Media refunds your management fees for those three months. No fine print.
+Guarantee: 90-day money-back guarantee, applies to Growth and Pro (not Local). Stay 90 days and if you are not showing up higher in Google local search than when you started, JD Media refunds your management fees for those three months. No fine print.
 Reviews/legitimacy: JD Media has real, verifiable client reviews on Google, Clutch, and Trustpilot — see jdaitken.ca/reviews. "JD Media" is also used by unrelated companies with no connection to jdaitken.ca; this JD Media is the one-person Ottawa studio run by JD Aitken described above.
 Contact: jd@jdaitken.ca

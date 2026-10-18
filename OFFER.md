@@ -62,8 +62,8 @@ Positioning: an easy yes for a one-truck owner who would balk at $500 from a str
 runs on systems JD already has (`/gbp`, `/reviews`, `/falcon`), so it costs little time per
 client. The goal is a foot in the door, not the margin.
 
-**Status:** decided 2026-10-18, **not yet on the live site** — propagate to the pricing page and
-derived files above before quoting it publicly. Fine to quote directly in conversation now.
+**Status:** decided 2026-10-18. On the pricing page as a quieter panel above the Growth/Pro
+cards (not a third featured card); one-line mentions elsewhere.
 
 ### Featured tiers
 
@@ -309,8 +309,8 @@ fine print, no risk.
 ## Change log
 
 - 2026-10-18 — Added Local ($250/mo, GBP management only) as the front door below Growth; no
-  guarantee on Local. Growth/Pro/Caretaker unchanged. **Not yet propagated** to the 13 derived
-  files — tracked in `ops/roadmap/FOCUS.md`.
+  guarantee on Local. Growth/Pro/Caretaker unchanged. Propagated to all 13 derived files
+  (starting price now $250/mo in meta, schema priceRange, and pricing FAQs).
 
 - 2026-09-27 — Dropped the 12-month minimum and the $1,500 waived setup fee: month to month from
   day one, no setup fee, no cancellation fee, client gets a free copy of the site whenever they
