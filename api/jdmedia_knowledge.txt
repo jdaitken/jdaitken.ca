@@ -1,24 +1,24 @@
 JD Media (jdaitken.ca), Ottawa, Canada
 About: one-person operation run by JD Aitken. JD builds and runs the websites Ottawa trades businesses get their calls from — he does the work himself and clients deal with him directly. Results are measured in calls and quote requests.
 Services: managed small-business websites (website + hosting + updates) for a simple monthly fee, plus Google Business Profile management on its own for businesses that want to leave their website as-is.
-Pricing (month to month, no contract, cancel anytime with 30 days notice, no cancellation fee):
+Pricing — three plans, each the one before plus one thing (month to month, no contract, cancel anytime with 30 days notice, no cancellation fee):
 
-Local: $250/month (the lowest-cost way to start)
+Google Profile: $250/month (the lowest-cost way to start)
 Includes: Google Business Profile management only. Profile tuned up in month one (categories, services, service area, photos, description), monthly GBP posts, replies to every Google review, a ready-to-send review request kit (direct review link + wording to text customers), a monthly map-ranking scan across the service area, and a short monthly report (calls, direction requests, map rank). Month to month, no setup fee; the client's website is left as-is.
-Does not include: website build or edits, SEO content/blog, Google Ads, or the 90-day guarantee. Upgrading to Growth keeps the profile work running without a gap.
+Does not include: website build or edits, SEO content/blog, Google Ads, or the 90-day guarantee. Upgrading to Website + Google keeps the profile work running without a gap.
 Best for: businesses that already have a website (or don't want to touch it yet) and want to show up in the Google map results.
 
-Growth: $500/month (recommended)
-Includes: custom 5-page website (not a template), mobile-first and fast loading, hosting + SSL + domain managed for you, a layout built to turn visitors into callers, Google Business Profile managed monthly (drives map results), monthly SEO content targeting local searches, a simple monthly report on how many people found and called you, up to 3 updates per month, response within 1 business day.
+Website + Google: $500/month
+Includes: everything in Google Profile, plus a custom 5-page website (not a template), mobile-first and fast loading, hosting + SSL + domain managed for you, a layout built to turn visitors into callers, Google Business Profile managed monthly (drives map results), monthly SEO content targeting local searches, a simple monthly report on how many people found and called you, up to 3 updates per month, response within 1 business day.
 Best for: businesses that want Google to send them customers without paying for ads.
 
-Pro: $900/month
-Includes: everything in Growth, Google Ads managed for you (you pay Google directly for ad spend, pause anytime with no penalty), quarterly 15-minute strategy call, same-day response, priority on everything.
+Website + Google + Ads: $900/month (Website + Google plus a flat $400/month for ads management)
+Includes: everything in Website + Google, plus Google Ads managed for you (you pay Google directly for the ad budget, at least about $500/month recommended; pause anytime with no penalty), quarterly 15-minute strategy call, same-day response, priority on everything.
 Best for: businesses that want their entire online customer acquisition handled for them, including paid ads.
 
 Setup fee: none. The custom build is included in the monthly plan, and nothing is owed if a client leaves early.
 
-Seasonality: the fee is flat year-round and does not change seasonally. Ad spend (Pro) is paid directly to Google and can be paused, raised, or lowered anytime with no effect on the fee. Off-season (roughly December-March) the work shifts rather than stops — SEO and content continue, Google Business Profile posts and review replies continue, plus citation cleanup and spring campaign prep.
+Seasonality: the fee is flat year-round and does not change seasonally. Ad spend (Website + Google + Ads) is paid directly to Google and can be paused, raised, or lowered anytime with no effect on the fee. Off-season (roughly December-March) the work shifts rather than stops — SEO and content continue, Google Business Profile posts and review replies continue, plus citation cleanup and spring campaign prep.
 
 Billing options: monthly (default), annual prepay (12 months for the price of 11), or seasonal billing (same 12-month total, weighted heavier April-October and lighter December-March).
 
@@ -29,6 +29,6 @@ Website-only / one-time build: for businesses that just want a site with no ongo
 Ownership: during the plan, the site is a managed service (hosted and maintained by JD Media). Whenever a client leaves, for any reason, they get a free copy of the site, every login, and help moving it. Their domain, Google Business Profile, and ad accounts are always theirs. Clients are never locked in.
 
 Launch timeline: most sites go live in 7-14 days after content is received.
-Guarantee: 90-day money-back guarantee, applies to Growth and Pro (not Local). Stay 90 days and if you are not showing up higher in Google local search than when you started, JD Media refunds your management fees for those three months. No fine print.
+Guarantee: 90-day money-back guarantee, applies to Website + Google and Website + Google + Ads (not Google Profile). Stay 90 days and if you are not showing up higher in Google local search than when you started, JD Media refunds your management fees for those three months. No fine print.
 Reviews/legitimacy: JD Media has real, verifiable client reviews on Google, Clutch, and Trustpilot — see jdaitken.ca/reviews. "JD Media" is also used by unrelated companies with no connection to jdaitken.ca; this JD Media is the one-person Ottawa studio run by JD Aitken described above.
 Contact: jd@jdaitken.ca
