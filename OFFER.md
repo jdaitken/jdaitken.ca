@@ -33,14 +33,46 @@ want Google to send them customers — not a DIY platform, not a big agency reta
 
 ---
 
-## The offer: two featured tiers, plus a caretaker floor
+## The offer: a GBP front door, two featured tiers, plus a caretaker floor
+
+**Ladder (2026-10-18):** free map scan → Local $250 → Growth $500 → Pro $900. Caretaker $75 is
+retention only. Local is the low-barrier way in; Growth is the upsell once a client sees calls
+come in from the map results.
+
+### Local — $250/month — *front door, GBP management only*
+
+**Best for:** You already have a website (or don't want to touch it yet) and want to show up
+in the Google map results when people nearby search for what you do.
+
+Includes:
+- Google Business Profile tuned up in month one: categories, services, service area, photos,
+  description
+- Monthly GBP posts
+- Replies to every Google review
+- A ready-to-send review request kit (your direct review link + wording to text customers)
+- Monthly map-ranking scan across your service area
+- Short monthly report: calls, direction requests, and where you rank on the map
+- Month to month, no setup fee; your website is left as-is
+
+Does not include: website build or edits, SEO content/blog, Google Ads, or the 90-day
+guarantee. Upgrade path: Growth, with the build included — a Local client who upgrades keeps
+the GBP work running without a gap.
+
+Positioning: an easy yes for a one-truck owner who would balk at $500 from a stranger. The work
+runs on systems JD already has (`/gbp`, `/reviews`, `/falcon`), so it costs little time per
+client. The goal is a foot in the door, not the margin.
+
+**Status:** decided 2026-10-18, **not yet on the live site** — propagate to the pricing page and
+derived files above before quoting it publicly. Fine to quote directly in conversation now.
+
+### Featured tiers
 
 Two tiers, not three, on the main pricing cards. Both include the full marketing engine (site +
 SEO + GBP) so both can honestly stand behind the guarantee. There is no website-only featured
 tier — see "Off-menu" below for that case. A third, quiet Caretaker tier exists below the cards
 as the floor for clients pausing active marketing — see that section.
 
-### Growth — $500/month — *entry tier, featured*
+### Growth — $500/month — *featured, the main upsell*
 
 **Best for:** You want Google to send you customers without paying for ads. I build and run
 everything — the site, the rankings, the profile — so you don't have to think about it.
@@ -187,7 +219,8 @@ with "act now" framing.
 local search than when you started, I refund your management fees for those three months. No
 fine print, no risk.
 
-- Applies to Growth and Pro (both carry the full SEO/GBP engine, so both can honestly be held to
+- Applies to Growth and Pro only — not Local, which doesn't touch the website or SEO content
+  (Growth and Pro carry the full SEO/GBP engine, so both can honestly be held to
   a ranking outcome).
 - Measured against: your Google Business Profile / map-pack position and organic ranking for the
   agreed target search terms, compared to your position on day one.
@@ -245,6 +278,12 @@ fine print, no risk.
   here the bottom one wasn't. Two tiers where both carry the guarantee is cleaner, more honest,
   and matches the "ultra simple" brand instinct — Pro still anchors Growth without needing a
   third card to do it.
+- **Why a $250 GBP-only front door (2026-10-18):** cold outreach through 2026-10 is ~59 T1s → 2
+  replies → 0 calls, and both repliers went quiet at the commitment step — the $500-900 ask from
+  a stranger looks like the wall, not the hook. Local lowers the first yes. $250 rather than
+  the ~$300 floated on 2026-10-04 because it should be an easy yes and the money is in the
+  Growth upgrade. Round number, same charm-pricing rule as below. Watch the solo capacity note:
+  cap Local at a handful of clients until the upgrade rate is known.
 - **Solo capacity note:** every hour is a shared, finite resource across all clients regardless of
   their plan. A low-price client costs the same calendar time as a high-price one and tends to be
   more price-sensitive and higher-churn. Pricing is a filter, not just a revenue lever — protect
@@ -268,6 +307,10 @@ fine print, no risk.
 ---
 
 ## Change log
+
+- 2026-10-18 — Added Local ($250/mo, GBP management only) as the front door below Growth; no
+  guarantee on Local. Growth/Pro/Caretaker unchanged. **Not yet propagated** to the 13 derived
+  files — tracked in `ops/roadmap/FOCUS.md`.
 
 - 2026-09-27 — Dropped the 12-month minimum and the $1,500 waived setup fee: month to month from
   day one, no setup fee, no cancellation fee, client gets a free copy of the site whenever they
