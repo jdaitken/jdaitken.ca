@@ -359,8 +359,14 @@ fine print, no risk.
   Ads as a +$400 add-on row and Google Profile ($250) as a smaller panel below. Prices, scopes,
   and terms unchanged. Customer-facing plan names dropped from the page (headings describe what
   each does); Local/Growth/Pro stay as internal aliases. Guarantee cut to one line under the
-  main button. Pricing page only so far — the other 12 derived files still describe three plans
-  and need propagating.
+  main button. Rollout complete (same day): propagated to all 12 other derived files. Plan names
+  replaced with "the $500 plan" / "Google Ads add-on" / "just your Google profile" in the chat
+  knowledge base, llms.txt, business-context.md, home page schema/FAQ/CTA note, the seven
+  service and area pages (pricing teaser, FAQ + FAQ schema, CTA note; "See plans" button now
+  "See pricing"), and the landing page offer list. Meta descriptions and the guarantee wording
+  (about page included) never named plans, so they were unchanged.
+  <!-- Was: Pricing page only so far — the other 12 derived files still describe three plans
+  and need propagating. -->
 
 - 2026-10-18 — Renamed the plans to say what's in them: Google Profile ($250), Website + Google
   ($500), Website + Google + Ads ($900); Local/Growth/Pro kept as internal aliases. Ads defined

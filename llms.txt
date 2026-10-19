@@ -8,11 +8,11 @@ JD Media is an Ottawa-based web design agency run by JD Aitken. We build mobile-
 
 ## Services & Pricing (CAD)
 
-Three plans, each the one before plus one thing. Website + Google and Website + Google + Ads include a custom 5-page website, hosting, SSL, and ongoing support. Google Profile is Google Business Profile management on its own. Month to month, no contract, no setup fee, cancel anytime with 30 days notice.
+One main monthly plan, one add-on, and a smaller way in: $500 a month and JD builds your website and gets you found on Google. Want ads too? Add $400. Just want your Google profile handled? $250. Month to month, no contract, no setup fee, cancel anytime with 30 days notice.
 
-- **Google Profile** ($250/month): Google Business Profile management only, with your website left as-is. Profile tune-up in month one, monthly GBP posts, replies to every Google review, a review request kit, a monthly map-ranking scan, and a short monthly report. Does not include the 90-day guarantee. Upgrading to Website + Google keeps the profile work running without a gap.
-- **Website + Google** ($500/month): Everything in Google Profile, plus a custom 5-page website, mobile-first design, fast loading, hosting/SSL/domain managed, a conversion-optimized layout, Google Business Profile managed monthly, monthly SEO content targeting local searches, a simple monthly performance report, up to 3 content updates per month, response within 1 business day.
-- **Website + Google + Ads** ($900/month): Everything in Website + Google, plus Google Ads managed for you (ad budget paid directly to Google, at least about $500/month recommended; pause anytime), a quarterly 15-minute strategy call, same-day response, and priority on everything.
+- **Website and Google, handled** ($500/month): the main plan. A custom 5-page website, mobile-first design, fast loading, hosting/SSL/domain managed, a conversion-optimized layout, Google Business Profile set up and managed monthly, replies to every Google review, monthly SEO content targeting local searches, a monthly map-ranking check, a simple monthly performance report, up to 3 content updates per month, response within 1 business day. Backed by a 90-day money-back guarantee.
+- **Google Ads add-on** (+$400/month on the $500 plan): Google Ads managed for you (ad budget paid directly to Google, at least about $500/month recommended; pause anytime), a quarterly 15-minute strategy call, same-day response, and priority on everything. Not offered on its own.
+- **Just your Google profile** ($250/month): Google Business Profile management only, with your website left as-is. Profile tune-up in month one, monthly GBP posts, replies to every Google review, a review request kit, a monthly map-ranking scan, and a short monthly report. Does not include the 90-day guarantee. Moving up to the $500 plan keeps the profile work running without a gap.
 - **Setup fee**: none. The custom build is included in the monthly plan, and nothing is owed if a client leaves early.
 - **Seasonality**: the fee is flat year-round; ad spend can be paused anytime with no effect on it, and off-season work (SEO, content, GBP, campaign prep) continues rather than stopping. Annual prepay and seasonal billing options are available.
 - **Caretaker Plan** ($75/month, not featured): for existing clients pausing active marketing — keeps hosting, SSL, GBP, and forms live with no new content or reporting.
@@ -33,7 +33,7 @@ One-time project quotes are also available for businesses that just want a websi
 2. **Design** (Days 1-3): Wireframes and mockups, client review and revisions. Deliverable: final design files.
 3. **Development** (Days 3-7): Clean code build, mobile optimization, SEO and tracking integration. Deliverable: staging site.
 4. **Launch** (Days 7-10): QA, cross-device testing, deploy to production. Deliverable: live website.
-5. **Ongoing Support**: Post-launch bug fixes, content updates, quarterly check-in calls (Website + Google + Ads).
+5. **Ongoing Support**: Post-launch bug fixes, content updates, quarterly check-in calls (with the Google Ads add-on).
 
 ## About JD Aitken
 
@@ -55,8 +55,8 @@ JD Aitken is the founder of JD Media, based in Ottawa, Ontario. He specializes i
 
 - JD Media is based in Ottawa, Ontario, Canada
 - We serve local service businesses: HVAC, plumbing, electrical, landscaping, and other home services
-- Monthly plans start at $250 CAD/month (Google Profile, Google Business Profile management only); website plans start at $500 CAD/month
-- Website + Google and Website + Google + Ads are backed by a 90-day money-back guarantee on Google local search visibility
+- The main plan is $500 CAD/month (website plus Google, handled); Google Ads management is a $400 CAD/month add-on; Google Business Profile management on its own is $250 CAD/month
+- The $500 plan (with or without the ads add-on) is backed by a 90-day money-back guarantee on Google local search visibility
 - Typical project timeline: about 1 to 2 weeks from kickoff to launch
 - We offer free website audits with no obligation
 - All sites are mobile-first and target Lighthouse scores of 90+ in all categories

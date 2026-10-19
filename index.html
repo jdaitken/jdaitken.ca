@@ -361,6 +361,13 @@
   <meta name="twitter:description" content="Fast websites that get Ottawa contractors more calls from Google. Fully managed, month to month, no setup fee. Backed by a 90-day money-back guarantee.">
 
   <!-- Structured Data -->
+  <!-- Offer names before 2026-10-19 (three-plan ladder; JSON-LD has no comment syntax, so kept here):
+       "Google Profile" $250 / "Website + Google" $500 / "Website + Google + Ads" $900
+       ("Everything in Website + Google, plus Google Ads managed for you ...").
+       FAQ "How much does a website cost?" was: "Website + Google is $500/month (CAD), which includes the
+       website, hosting, and monthly SEO and Google Business Profile management. Website + Google + Ads at
+       $900/month adds managed Google Ads, with the ad budget paid to Google directly. Google Business
+       Profile management on its own, with your website left as-is, is the Google Profile plan at $250/month." -->
   <!-- Starter Plan retired from the two-tier lineup (Growth/Pro); JSON-LD has no comment
        syntax so it's preserved here instead of inline:
        { "@type": "Offer", "name": "Starter Plan", "price": "295", "priceCurrency": "CAD",
@@ -430,24 +437,24 @@
           "itemListElement": [
             {
               "@type": "Offer",
-              "name": "Google Profile",
+              "name": "Website and Google, handled",
+              "price": "500",
+              "priceCurrency": "CAD",
+              "description": "The main plan: custom 5-page website, mobile-first design, hosting and SSL, active Google Business Profile management, monthly SEO content, monthly performance report, up to 3 updates per month, 1 business day response."
+            },
+            {
+              "@type": "Offer",
+              "name": "Website and Google, handled, with Google Ads",
+              "price": "900",
+              "priceCurrency": "CAD",
+              "description": "The $500 plan with the $400 Google Ads add-on: Google Ads managed for you (ad budget paid directly to Google, at least about $500/month recommended), pause anytime, quarterly strategy call, same-day priority response."
+            },
+            {
+              "@type": "Offer",
+              "name": "Just your Google profile",
               "price": "250",
               "priceCurrency": "CAD",
               "description": "Google Business Profile management only: profile tune-up, monthly posts, replies to every review, a review request kit, a monthly map-ranking scan, and a short monthly report. Website left as-is. No 90-day guarantee."
-            },
-            {
-              "@type": "Offer",
-              "name": "Website + Google",
-              "price": "500",
-              "priceCurrency": "CAD",
-              "description": "Custom 5-page website, mobile-first design, hosting and SSL, active Google Business Profile management, monthly SEO content, monthly performance report, up to 3 updates per month, 1 business day response."
-            },
-            {
-              "@type": "Offer",
-              "name": "Website + Google + Ads",
-              "price": "900",
-              "priceCurrency": "CAD",
-              "description": "Everything in Website + Google, plus Google Ads managed for you (ad budget paid directly to Google, at least about $500/month recommended), pause anytime, quarterly strategy call, same-day priority response."
             }
           ]
         },
@@ -465,7 +472,7 @@
           {
             "@type": "Question",
             "name": "How much does a website cost?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Website + Google is $500/month (CAD), which includes the website, hosting, and monthly SEO and Google Business Profile management. Website + Google + Ads at $900/month adds managed Google Ads, with the ad budget paid to Google directly. Google Business Profile management on its own, with your website left as-is, is the Google Profile plan at $250/month." }
+            "acceptedAnswer": { "@type": "Answer", "text": "One flat plan: $500/month (CAD) and I build your website and get you found on Google, with hosting, monthly SEO, and Google Business Profile management included. Want ads too? Google Ads management adds $400/month, with the ad budget paid to Google directly. Just want your Google profile handled, with your website left as-is? That's $250/month." }
           },
           {
             "@type": "Question",
@@ -893,7 +900,8 @@
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-answer" role="region">
-            <p>Website + Google is $500/month (CAD), which includes the website, hosting, and monthly SEO and Google Business Profile management. Website + Google + Ads at $900/month adds managed Google Ads, with the ad budget paid to Google directly. Google Business Profile management on its own, with your website left as-is, is the Google Profile plan at $250/month.</p>
+            <p>One flat plan: $500/month (CAD) and I build your website and get you found on Google, with hosting, monthly SEO, and Google Business Profile management included. Want ads too? Google Ads management adds $400/month, with the ad budget paid to Google directly. Just want your Google profile handled, with your website left as-is? That&rsquo;s $250/month.</p>
+            <!-- Was (three-plan era, to 2026-10-19): <p>Website + Google is $500/month (CAD), which includes the website, hosting, and monthly SEO and Google Business Profile management. Website + Google + Ads at $900/month adds managed Google Ads, with the ad budget paid to Google directly. Google Business Profile management on its own, with your website left as-is, is the Google Profile plan at $250/month.</p> -->
           </div>
         </div>
 
@@ -961,7 +969,8 @@
         <span>90-day money-back guarantee</span>
       </div>
       -->
-      <p class="pricing-note">Website + Google &middot; $500/mo &middot; Month to month, no setup fee</p>
+      <p class="pricing-note">$500/mo &middot; Month to month, no setup fee</p>
+      <!-- Was (three-plan era, to 2026-10-19): <p class="pricing-note">Website + Google &middot; $500/mo &middot; Month to month, no setup fee</p> -->
     </div>
   </section>
 
