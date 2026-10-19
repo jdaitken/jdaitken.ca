@@ -52,11 +52,15 @@
 
     .plan-plus { font-size: var(--text-sm); font-weight: var(--font-semibold); color: var(--color-text); margin: 0 0 var(--space-sm); }
     .plan-list { list-style: none; display: flex; flex-direction: column; gap: var(--space-sm); margin: 0; padding: 0; }
-    .plan-list li { font-size: var(--text-sm); color: var(--color-text-secondary); padding-left: var(--space-lg); position: relative; line-height: var(--leading-snug); }
+    .plan-list li { font-size: var(--text-base); color: var(--color-text); /* was text-sm, text-secondary (2026-10-19) */ padding-left: var(--space-lg); position: relative; line-height: var(--leading-snug); }
     .plan-list li::before { content: "\2713"; position: absolute; left: 0; color: var(--color-success-dark); font-weight: var(--font-bold); }
-    .plan-note { margin: auto 0 0; padding-top: var(--space-lg); font-size: var(--text-sm); color: var(--color-text-muted); line-height: var(--leading-normal); }
+    .plan-note { margin: auto 0 0; padding-top: var(--space-lg); font-size: var(--text-sm); color: var(--color-text-secondary); /* was text-muted (2026-10-19) */ line-height: var(--leading-normal); }
     .plan-note strong { color: var(--color-text); font-weight: var(--font-semibold); }
 
+    .plan-cta { width: 100%; margin-top: var(--space-lg); }
+    .plans-proof { font-size: var(--text-sm); color: var(--color-text-secondary); margin: 0 0 var(--space-sm); }
+    .plans-proof .review-stars { margin-right: var(--space-xs); }
+    .plans-proof a { color: var(--color-accent-text); font-weight: var(--font-medium); }
     .plans-terms { max-width: 1080px; margin: var(--space-xl) auto 0; text-align: center; }
     .plans-terms-main { font-family: var(--font-display); text-wrap: balance; font-size: var(--text-xl); font-weight: var(--font-semibold); color: var(--color-text); margin: 0 0 var(--space-sm); }
     .plans-terms-quiet { font-size: var(--text-sm); color: var(--color-text-muted); margin: 0; }
@@ -404,11 +408,12 @@
       <div class="plans-grid">
 
         <article class="plan-card">
+          <!-- Ladder chips retired 2026-10-19 (read as clickable tabs):
           <ul class="plan-ladder" aria-label="Includes Google profile">
             <li class="is-on">Google</li>
             <li>Website</li>
             <li>Ads</li>
-          </ul>
+          </ul> -->
           <h2>Google Profile</h2>
           <div class="plan-price">$250<span>/mo</span></div>
           <p class="plan-what">I run your Google profile so you show up on the map when people nearby search for what you do.</p>
@@ -421,14 +426,16 @@
             <li>A short monthly report: calls, directions, map rank</li>
           </ul>
           <p class="plan-note">Your website stays as it is.</p>
+          <a href="/contact" class="btn btn-secondary plan-cta">Get My Free Map Scan</a>
         </article>
 
         <article class="plan-card">
+          <!-- Ladder chips retired 2026-10-19 (read as clickable tabs):
           <ul class="plan-ladder" aria-label="Includes Google profile and website">
             <li class="is-on">Google</li>
             <li class="is-on">Website</li>
             <li>Ads</li>
-          </ul>
+          </ul> -->
           <h2>Website + Google</h2>
           <div class="plan-price">$500<span>/mo</span></div>
           <p class="plan-what">I build your website and get it found on Google, so people find you without you paying for ads.</p>
@@ -441,14 +448,16 @@
             <li>A reply from me within 1 business day</li>
           </ul>
           <p class="plan-note">The website build is included. Nothing extra up front.</p>
+          <button type="button" class="btn btn-secondary plan-cta open-audit-modal">Get My Free Site Audit</button>
         </article>
 
         <article class="plan-card">
+          <!-- Ladder chips retired 2026-10-19 (read as clickable tabs):
           <ul class="plan-ladder" aria-label="Includes Google profile, website, and ads">
             <li class="is-on">Google</li>
             <li class="is-on">Website</li>
             <li class="is-on">Ads</li>
-          </ul>
+          </ul> -->
           <h2>Website + Google + Ads</h2>
           <div class="plan-price">$900<span>/mo</span></div>
           <p class="plan-what">I also run your Google Ads, so you show up at the top of search results right away.</p>
@@ -460,12 +469,14 @@
             <li>Same-day replies to any question</li>
           </ul>
           <p class="plan-note"><strong>Ad budget is separate.</strong> You pay Google directly for the ads themselves. I recommend at least about $500 a month.</p>
+          <button type="button" class="btn btn-secondary plan-cta open-audit-modal">Get My Free Site Audit</button>
         </article>
 
       </div>
 
       <div class="plans-terms">
         <p class="plans-terms-main">No setup fee. No contract. Cancel anytime.</p>
+        <p class="plans-proof"><span class="review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Rated 5.0 on Google from 8 client reviews. <a href="/reviews">Read them</a>.</p>
         <p class="plans-terms-quiet">Just need a professional website? I do one-time builds too. <a href="/contact">Ask me</a>.</p>
       </div>
     </div>
