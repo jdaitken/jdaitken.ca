@@ -58,7 +58,7 @@ Rules:
 
 ## UI Kit
 
-**Buttons** — squared (4px radius, `--radius-sm`), machined, no shadows or glows, no arrow garnish.
+**Buttons** — squared with a softened edge (6px radius, `--btn-radius`; was 4px until 2026-10-19), machined, no shadows or glows, no arrow garnish. Never pill-shaped.
 - `.btn-primary`: signal red, white text. One per screen.
 - `.btn-secondary`: transparent, 1.5px navy outline; fills navy on hover.
 - `.btn-ghost`: navy text, quiet background hover.
