@@ -50,9 +50,24 @@ treat them as aliases:
 | Website + Google | Growth | $500/mo |
 | Website + Google + Ads | Pro | $900/mo ($500 + $400 ads management) |
 
+**Presentation (2026-10-19): one plan, one add-on, one smaller way in.** Same three prices and
+scopes, but the page sells one thing. In one sentence: *"$500 a month and I build your website
+and get you found on Google. Want ads too? Add $400. Just want your Google profile handled?
+$250."*
+
+- The $500 plan is the one main card, with the one red CTA and the guarantee as a single line
+  under the button. It has no product name on the page; the heading is what it does ("Your
+  website and Google, handled.").
+- Google Ads is shown inside that card as an add-on row (+$400/mo), not as its own plan.
+- Google Profile ($250) is a quieter panel below the card ("Just your Google profile"), linking
+  to the free map scan.
+- No "recommended" badge: with one main plan, it is the recommendation.
+
+<!-- Superseded 2026-10-19 — kept per the no-delete rule:
 Pricing page: three cards, left to right, same visual weight, one line under them ("No setup
 fee. No contract. Cancel anytime."), guarantee once at the decision point. Caretaker and
 one-time builds stay off the cards.
+-->
 
 ### Google Profile (Local) — $250/month — *front door, GBP management only*
 
@@ -339,6 +354,13 @@ fine print, no risk.
 ---
 
 ## Change log
+
+- 2026-10-19 — Pricing page reworked from three equal cards to one main plan ($500) with Google
+  Ads as a +$400 add-on row and Google Profile ($250) as a smaller panel below. Prices, scopes,
+  and terms unchanged. Customer-facing plan names dropped from the page (headings describe what
+  each does); Local/Growth/Pro stay as internal aliases. Guarantee cut to one line under the
+  main button. Pricing page only so far — the other 12 derived files still describe three plans
+  and need propagating.
 
 - 2026-10-18 — Renamed the plans to say what's in them: Google Profile ($250), Website + Google
   ($500), Website + Google + Ads ($900); Local/Growth/Pro kept as internal aliases. Ads defined

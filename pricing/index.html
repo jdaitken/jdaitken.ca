@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Pricing | JD Media Ottawa: Plans from $250/mo</title>
-  <meta name="description" content="Three flat monthly plans: Google Profile $250, Website + Google $500, Website + Google + Ads $900. No setup fee. No contract. Cancel anytime.">
+  <meta name="description" content="One flat monthly plan: $500 for your website and Google, handled. Add Google Ads for $400. Or just your Google profile for $250. No setup fee. No contract.">
 
   <link rel="icon" type="image/x-icon" href="/brand/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="/brand/favicon/favicon-16.png">
@@ -34,7 +34,7 @@
        The "ladder" bar on each card shows which of Google / Website / Ads it includes. */
     .pricing-hero { padding-bottom: var(--space-xl); }
     @media (min-width: 768px) { .pricing-hero { padding: var(--space-3xl) 0 var(--space-2xl); } }
-    .pricing-hero p { max-width: 720px; }
+    .pricing-hero p { max-width: 720px; text-wrap: balance; }
     .plans-section { padding-top: 0; }
     .plans-grid { display: grid; gap: var(--space-lg); max-width: 1080px; margin: 0 auto; }
     @media (min-width: 900px) { .plans-grid { grid-template-columns: repeat(3, 1fr); } }
@@ -57,6 +57,32 @@
     .plan-note { margin: auto 0 0; padding-top: var(--space-lg); font-size: var(--text-sm); color: var(--color-text-secondary); /* was text-muted (2026-10-19) */ line-height: var(--leading-normal); }
     .plan-note strong { color: var(--color-text); font-weight: var(--font-semibold); }
 
+    /* One plan + add-on + smaller way in (2026-10-19) */
+    .offer-section { padding-top: 0; }
+    .offer-card { max-width: 960px; margin: 0 auto; border: 1px solid var(--color-border); border-radius: var(--card-radius); background: var(--color-surface); }
+    .offer-main { display: grid; gap: var(--space-xl); padding: var(--space-xl); }
+    @media (min-width: 900px) { .offer-main { grid-template-columns: 5fr 6fr; gap: var(--space-2xl); padding: var(--space-2xl); } }
+    .offer-price { font-family: var(--font-display); font-size: var(--text-5xl); font-weight: var(--font-bold); letter-spacing: var(--tracking-tight); color: var(--color-text); line-height: 1; margin: 0 0 var(--space-md); }
+    .offer-price span { font-family: var(--font-ui); font-size: var(--text-lg); font-weight: var(--font-normal); letter-spacing: 0; color: var(--color-text-muted); }
+    .offer-what { font-size: var(--text-lg); color: var(--color-text); line-height: var(--leading-normal); margin: 0 0 var(--space-xl); }
+    .offer-cta { width: 100%; }
+    .offer-guarantee { display: flex; gap: var(--space-sm); align-items: flex-start; margin: var(--space-md) 0 0; font-size: var(--text-sm); color: var(--color-text-secondary); line-height: var(--leading-normal); }
+    .offer-guarantee strong { color: var(--color-text); font-weight: var(--font-semibold); }
+    .offer-guarantee-icon { flex-shrink: 0; width: 20px; height: 20px; margin-top: 1px; border-radius: var(--radius-sm); background: var(--color-accent); color: var(--color-surface); font-size: var(--text-xs); font-weight: var(--font-bold); display: flex; align-items: center; justify-content: center; line-height: 1; }
+    .offer-list { list-style: none; display: flex; flex-direction: column; gap: var(--space-sm); margin: 0; padding: 0; }
+    @media (min-width: 900px) { .offer-list { padding-left: var(--space-2xl); border-left: 1px solid var(--color-border); } }
+    .offer-list li { font-size: var(--text-base); color: var(--color-text); padding-left: var(--space-lg); position: relative; line-height: var(--leading-snug); }
+    .offer-list li::before { content: "\2713"; position: absolute; left: 0; color: var(--color-success-dark); font-weight: var(--font-bold); }
+    .offer-addon { border-top: 1px solid var(--color-border); padding: var(--space-lg) var(--space-xl); background: var(--color-bg); border-radius: 0 0 var(--card-radius) var(--card-radius); }
+    @media (min-width: 900px) { .offer-addon { padding: var(--space-lg) var(--space-2xl); } }
+    .offer-row { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-md); margin-bottom: var(--space-xs); }
+    .offer-row h3 { font-size: var(--text-lg); margin: 0; }
+    .offer-row-price { font-family: var(--font-display); font-size: var(--text-xl); font-weight: var(--font-bold); color: var(--color-text); margin: 0; white-space: nowrap; }
+    .offer-row-price span { font-family: var(--font-ui); font-size: var(--text-sm); font-weight: var(--font-normal); color: var(--color-text-muted); }
+    .offer-addon > p, .offer-alt > p { font-size: var(--text-sm); color: var(--color-text-secondary); line-height: var(--leading-normal); margin: 0; max-width: 72ch; }
+    .offer-alt { max-width: 960px; margin: var(--space-lg) auto 0; padding: var(--space-lg) var(--space-xl); border: 1px solid var(--color-border); border-radius: var(--card-radius); }
+    @media (min-width: 900px) { .offer-alt { padding: var(--space-lg) var(--space-2xl); } }
+    .offer-alt-link { display: inline-block; margin-top: var(--space-sm); font-size: var(--text-sm); font-weight: var(--font-semibold); color: var(--color-text); text-decoration: underline; text-underline-offset: 3px; }
     .plan-cta { width: 100%; margin-top: var(--space-lg); }
     .plans-proof { font-size: var(--text-sm); color: var(--color-text-secondary); margin: 0 0 var(--space-sm); }
     .plans-proof .review-stars { margin-right: var(--space-xs); }
@@ -157,7 +183,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jdaitken.ca/pricing/">
   <meta property="og:title" content="Pricing | JD Media Ottawa: Plans from $250/mo">
-  <meta property="og:description" content="Three flat monthly plans: Google Profile $250, Website + Google $500, Website + Google + Ads $900. No setup fee. No contract. Cancel anytime.">
+  <meta property="og:description" content="One flat monthly plan: $500 for your website and Google, handled. Add Google Ads for $400. Or just your Google profile for $250. No setup fee. No contract.">
   <meta property="og:image" content="https://jdaitken.ca/images/og-image-v3.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -167,7 +193,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://jdaitken.ca/images/og-image-v3.png">
   <meta name="twitter:title" content="Pricing | JD Media Ottawa Web Design">
-  <meta name="twitter:description" content="Three flat monthly plans: Google Profile $250, Website + Google $500, Website + Google + Ads $900. No setup fee. No contract. Cancel anytime.">
+  <meta name="twitter:description" content="One flat monthly plan: $500 for your website and Google, handled. Add Google Ads for $400. Or just your Google profile for $250. No setup fee. No contract.">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -229,7 +255,7 @@
             "position": 1,
             "item": {
               "@type": "Service",
-              "name": "Google Profile",
+              "name": "Just your Google profile",
               "description": "Google Business Profile management only: profile tune-up in month one, monthly posts, replies to every Google review, a review request kit, a monthly map-ranking scan, and a short monthly report. Month to month, no setup fee, website left as-is. Does not include the 90-day guarantee.",
               "provider": { "@id": "https://jdaitken.ca/#business" },
               "offers": {
@@ -245,8 +271,8 @@
             "position": 2,
             "item": {
               "@type": "Service",
-              "name": "Website + Google",
-              "description": "Everything in Google Profile, plus a custom 5-page website built for your business, mobile-first and fast, hosting/SSL/domain managed, a layout built to turn visitors into callers, Google Business Profile managed monthly, monthly SEO content targeting local searches, a simple monthly performance report, up to 3 updates per month, response within 1 business day.",
+              "name": "Website and Google, handled",
+              "description": "Google profile management, plus a custom 5-page website built for your business, mobile-first and fast, hosting/SSL/domain managed, a layout built to turn visitors into callers, Google Business Profile managed monthly, monthly SEO content targeting local searches, a simple monthly performance report, up to 3 updates per month, response within 1 business day.",
               "provider": { "@id": "https://jdaitken.ca/#business" },
               "offers": {
                 "@type": "Offer",
@@ -261,8 +287,8 @@
             "position": 3,
             "item": {
               "@type": "Service",
-              "name": "Website + Google + Ads",
-              "description": "Everything in Website + Google, plus Google Ads managed for you (ad budget paid directly to Google, at least about $500/month recommended), pause anytime with no penalty, a quarterly 15-minute strategy call, same-day response on any request, and priority on everything.",
+              "name": "Website and Google, handled, with Google Ads",
+              "description": "The $500 plan with the $400 Google Ads add-on: Google Ads managed for you (ad budget paid directly to Google, at least about $500/month recommended), pause anytime with no penalty, a quarterly 15-minute strategy call, same-day response on any request, and priority on everything.",
               "provider": { "@id": "https://jdaitken.ca/#business" },
               "offers": {
                 "@type": "Offer",
@@ -279,13 +305,13 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Which plan should I pick?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Happy with your website? Start with Google Profile. No website, or one that's old or slow? Website + Google. Want calls coming in sooner and can spend at least about $500 a month on ads? Website + Google + Ads. Not sure? Get the free audit and I'll tell you which one fits." }
+            "name": "Which option is right for me?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Most businesses want the $500 plan: I build your website and run your Google presence. Want calls coming in sooner and can spend at least about $500 a month on ads? Add Google Ads for $400. Happy with your current website? Start with just your Google profile for $250. Not sure? Get the free audit and I'll tell you which fits." }
           },
           {
             "@type": "Question",
             "name": "What if I already have a website?",
-            "acceptedAnswer": { "@type": "Answer", "text": "On Google Profile, your website stays exactly as it is. On Website + Google or Website + Google + Ads, I rebuild it from scratch, and your current site stays live until the new one is ready." }
+            "acceptedAnswer": { "@type": "Answer", "text": "On the $500 plan, I rebuild it from scratch, and your current site stays live until the new one is ready. If you only want your Google profile handled, your website stays exactly as it is." }
           },
           {
             "@type": "Question",
@@ -320,7 +346,7 @@
           {
             "@type": "Question",
             "name": "How much does a website cost from JD Media?",
-            "acceptedAnswer": { "@type": "Answer", "text": "JD Media has three monthly plans (CAD). Google Profile is $250/month: Google Business Profile management only, and your website stays as it is. Website + Google is $500/month. Website + Google + Ads is $900/month, with the ad budget paid to Google directly. Website + Google and Website + Google + Ads include a custom 5-page website, hosting, SSL, monthly SEO and Google Business Profile management, and ongoing support. One-time project quotes are also available for a website-only build." }
+            "acceptedAnswer": { "@type": "Answer", "text": "JD Media has one main monthly plan at $500/month (CAD): a custom 5-page website, hosting, SSL, monthly SEO and Google Business Profile management, and ongoing support. Google Ads management can be added for $400/month, with the ad budget paid to Google directly. Businesses happy with their current website can have just their Google Business Profile managed for $250/month. One-time project quotes are also available for a website-only build." }
           }
         ]
       }
@@ -395,25 +421,79 @@
 
   <section class="pricing-hero">
     <div class="container">
-      <h1>Three plans. Each one adds one thing.</h1>
-      <p>Start with your Google profile. Add a website. Add ads. Move up or down anytime.</p>
+      <h1>Your website and Google, handled.</h1>
+      <p>One flat monthly plan. Add Google Ads when you want calls sooner. No setup fee, no contract.</p>
+      <!-- Was (three-card era, 2026-10-18): <h1>Three plans. Each one adds one thing.</h1>
+      <p>Start with your Google profile. Add a website. Add ads. Move up or down anytime.</p> -->
       <!-- Was (two-tier era): <h1>Simple pricing. No surprises.</h1>
       <p>Your website, hosting, and support. All in one flat monthly plan. No big upfront costs.</p> -->
     </div>
   </section>
 
-  <!-- Plans: three equal cards (2026-10-18). Source of truth: /OFFER.md -->
+  <!-- One plan, one add-on, one smaller way in (2026-10-19). Source of truth: /OFFER.md -->
+  <section class="offer-section" aria-label="Pricing">
+    <div class="container">
+
+      <article class="offer-card">
+        <div class="offer-main">
+          <div class="offer-lead">
+            <h2 class="offer-price">$500<span>/mo</span></h2>
+            <p class="offer-what">I build your website, get it found on Google, and keep it all running. You answer the phone.</p>
+            <button type="button" class="btn btn-primary offer-cta open-audit-modal">Get My Free Site Audit</button>
+            <p class="offer-guarantee"><span class="offer-guarantee-icon" aria-hidden="true">&#10003;</span><span><strong>90-day money-back guarantee.</strong> If you&rsquo;re not showing up higher on Google after 90 days, I refund your fees.</span></p>
+          </div>
+          <ul class="offer-list">
+            <li>A custom 5-page website, built for your business</li>
+            <li>Hosting, security, and your domain looked after</li>
+            <li>Your Google profile set up and managed every month</li>
+            <li>A reply to every Google review</li>
+            <li>Monthly writing that targets what your customers search for</li>
+            <li>A monthly check of where you show up on the map</li>
+            <li>A short monthly report: calls and where you rank</li>
+            <li>Up to 3 changes to your site a month</li>
+            <li>A reply from me within 1 business day</li>
+          </ul>
+        </div>
+        <div class="offer-addon">
+          <div class="offer-row">
+            <h3>Add Google Ads</h3>
+            <p class="offer-row-price">+$400<span>/mo</span></p>
+          </div>
+          <p>I set up and run your ads so you show up at the top of Google right away. You pay Google directly for the ad budget; I recommend at least about $500 a month. Pause anytime. Includes a quarterly check-in call and same-day replies.</p>
+        </div>
+      </article>
+
+      <aside class="offer-alt">
+        <div class="offer-row">
+          <h3>Just your Google profile</h3>
+          <p class="offer-row-price">$250<span>/mo</span></p>
+        </div>
+        <p>Not ready for a new website? I&rsquo;ll run your Google profile so you show up on the map: monthly posts, a reply to every review, a monthly map check and report. Your website stays as it is.</p>
+        <a href="/contact" class="offer-alt-link">Get My Free Map Scan</a>
+      </aside>
+
+      <div class="plans-terms">
+        <p class="plans-terms-main">No setup fee. No contract. Cancel anytime.</p>
+        <p class="plans-proof"><span class="review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> Rated 5.0 on Google from 8 client reviews. <a href="/reviews">Read them</a>.</p>
+        <p class="plans-terms-quiet">Just need a professional website? I do one-time builds too. <a href="/contact">Ask me</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three equal cards + decision band, retired 2026-10-19 (one main plan replaced them; see /OFFER.md).
+  Kept per the no-delete rule. Inner comment markers changed to <!~~ ~~>.
+  <!~~ Plans: three equal cards (2026-10-18). Source of truth: /OFFER.md ~~>
   <section class="plans-section" aria-label="Plans">
     <div class="container">
       <div class="plans-grid">
 
         <article class="plan-card">
-          <!-- Ladder chips retired 2026-10-19 (read as clickable tabs):
+          <!~~ Ladder chips retired 2026-10-19 (read as clickable tabs):
           <ul class="plan-ladder" aria-label="Includes Google profile">
             <li class="is-on">Google</li>
             <li>Website</li>
             <li>Ads</li>
-          </ul> -->
+          </ul> ~~>
           <h2>Google Profile</h2>
           <div class="plan-price">$250<span>/mo</span></div>
           <p class="plan-what">I run your Google profile so you show up on the map when people nearby search for what you do.</p>
@@ -430,12 +510,12 @@
         </article>
 
         <article class="plan-card">
-          <!-- Ladder chips retired 2026-10-19 (read as clickable tabs):
+          <!~~ Ladder chips retired 2026-10-19 (read as clickable tabs):
           <ul class="plan-ladder" aria-label="Includes Google profile and website">
             <li class="is-on">Google</li>
             <li class="is-on">Website</li>
             <li>Ads</li>
-          </ul> -->
+          </ul> ~~>
           <h2>Website + Google</h2>
           <div class="plan-price">$500<span>/mo</span></div>
           <p class="plan-what">I build your website and get it found on Google, so people find you without you paying for ads.</p>
@@ -452,12 +532,12 @@
         </article>
 
         <article class="plan-card">
-          <!-- Ladder chips retired 2026-10-19 (read as clickable tabs):
+          <!~~ Ladder chips retired 2026-10-19 (read as clickable tabs):
           <ul class="plan-ladder" aria-label="Includes Google profile, website, and ads">
             <li class="is-on">Google</li>
             <li class="is-on">Website</li>
             <li class="is-on">Ads</li>
-          </ul> -->
+          </ul> ~~>
           <h2>Website + Google + Ads</h2>
           <div class="plan-price">$900<span>/mo</span></div>
           <p class="plan-what">I also run your Google Ads, so you show up at the top of search results right away.</p>
@@ -482,7 +562,7 @@
     </div>
   </section>
 
-  <!-- Decision point: the one guarantee mention, then the CTA -->
+  <!~~ Decision point: the one guarantee mention, then the CTA ~~>
   <section class="guarantee-band decision-band">
     <div class="container">
       <div class="guarantee-inner">
@@ -497,6 +577,7 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- ROI proof strip — retired from the pricing page 2026-10-18 (pushed the plans down; reviews below carry the proof).
   Also retired the same day, kept per the no-delete rule: the Local panel + two-card grid, the old guarantee band,
@@ -728,11 +809,11 @@
 
         <div class="faq-item">
           <button class="faq-question" type="button" aria-expanded="false">
-            Which plan should I pick?
+            Which option is right for me?
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-answer" role="region">
-            <p>Happy with your website? Start with Google Profile. No website, or one that&rsquo;s old or slow? Website + Google. Want calls coming in sooner and can spend at least about $500 a month on ads? Website + Google + Ads. Not sure? Get the free audit and I&rsquo;ll tell you which one fits.</p>
+            <p>Most businesses want the $500 plan: I build your website and run your Google presence. Want calls coming in sooner and can spend at least about $500 a month on ads? Add Google Ads for $400. Happy with your current website? Start with just your Google profile for $250. Not sure? Get the free audit and I&rsquo;ll tell you which fits.</p>
           </div>
         </div>
 
@@ -742,7 +823,7 @@
             <span class="faq-icon" aria-hidden="true"></span>
           </button>
           <div class="faq-answer" role="region">
-            <p>On Google Profile, your website stays exactly as it is. On Website + Google or Website + Google + Ads, I rebuild it from scratch, and your current site stays live until the new one is ready.</p>
+            <p>On the $500 plan, I rebuild it from scratch, and your current site stays live until the new one is ready. If you only want your Google profile handled, your website stays exactly as it is.</p>
             <!-- Was: <p>I'll rebuild it from scratch. Your current site stays live until the new one is ready.</p> -->
           </div>
         </div>
