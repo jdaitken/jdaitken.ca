@@ -9,5 +9,12 @@
   </FilesMatch>
 </IfModule>
 
+# 2026-10-31: www.jdaitken.ca served a duplicate copy (Google indexed www for /nepean-web-design/).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.jdaitken\.ca$ [NC]
+  RewriteRule ^(.*)$ https://jdaitken.ca/$1 [R=301,L]
+</IfModule>
+
 # Superseded 2026-08-09: blog/index.html now exists, so /blog/ serves the catalog directly.
 # RedirectMatch 302 ^/blog/?$ https://jdaitken.ca/blog/website-that-generates-calls-local-trades/
