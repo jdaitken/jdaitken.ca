@@ -500,7 +500,7 @@
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1285414636910501&ev=PageView&noscript=1"
   /></noscript>
-  <link rel="stylesheet" href="/styles/polish.css?v=20261101b">
+  <link rel="stylesheet" href="/styles/polish.css?v=20261101c">
 </head>
 
 <body>
@@ -625,6 +625,9 @@
       <figure class="hero-proof-card">
         <a href="/work/legendary-landscaping/" aria-label="Legendary Landscaping: 17 quote requests in July 2026. Read the story">
           <div class="case-study-domain" aria-hidden="true"><span>legendarylandscaping.ca</span><span>Landscaping, Ottawa</span></div>
+          <!-- Screenshot is desktop-only: on phones it became the LCP element (live Lighthouse 99 -> 75)
+               and repeats the proof section just below. Phones get the numbers strip only; the tiny
+               fallback src means nothing is downloaded below 900px.
           <picture>
             <source type="image/webp"
               srcset="/images/projects/legendary-landscaping-update-600.webp 600w, /images/projects/legendary-landscaping-update-800.webp 800w, /images/projects/legendary-landscaping-update-1000.webp 1000w"
@@ -634,6 +637,17 @@
               alt="Legendary Landscaping website, rebuilt by JD Media"
               width="1200" height="625"
               fetchpriority="high" decoding="async">
+          </picture>
+          -->
+          <picture class="hero-proof-shot">
+            <source media="(min-width: 900px)" type="image/webp"
+              srcset="/images/projects/legendary-landscaping-update-600.webp 600w, /images/projects/legendary-landscaping-update-800.webp 800w, /images/projects/legendary-landscaping-update-1000.webp 1000w"
+              sizes="480px">
+            <img
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              alt="Legendary Landscaping website, rebuilt by JD Media"
+              width="1200" height="625"
+              decoding="async">
           </picture>
           <figcaption class="case-study-metrics">
             <div class="metric">
