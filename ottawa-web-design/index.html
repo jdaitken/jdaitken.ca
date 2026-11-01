@@ -159,7 +159,7 @@
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1285414636910501&ev=PageView&noscript=1"
   /></noscript>
-  <link rel="stylesheet" href="/styles/polish.css?v=20261101c">
+  <link rel="stylesheet" href="/styles/polish.css?v=20261101d">
 </head>
 
 <body>
@@ -231,9 +231,11 @@
   <!-- Problem framing -->
   <section class="problem-section">
     <div class="container">
-      <div class="problem-inner">
+      <!-- <div class="problem-inner"> -->
+      <div class="problem-inner problem-inner--split">
         <p>Most contractor websites look the same: a template, a stock photo, and a contact form nobody checks. Small businesses make up the vast majority of Ottawa's local economy, per <a href="https://ised-isde.canada.ca/site/sme-research-statistics/en" target="_blank" rel="noopener">Innovation, Science and Economic Development Canada's small business research</a>, which means the contractor with the sharper site is competing against dozens of others that look identical.</p>
-        <p>Homeowners notice &mdash; and they call whoever&rsquo;s site looks like an active, trustworthy business.</p>
+        <!-- <p>Homeowners notice &mdash; and they call whoever&rsquo;s site looks like an active, trustworthy business.</p> -->
+        <p class="problem-statement problem-statement--long">Homeowners notice &mdash; and they call whoever&rsquo;s site looks like an active, trustworthy business.</p>
       </div>
     </div>
   </section>
@@ -299,13 +301,14 @@
   <!-- Proof -->
   <section class="case-study">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header section-header--split">
         <h2>Proof, not promises.</h2>
         <p>Two Ottawa contractors, and the numbers from their own dashboards.</p>
       </div>
-      <div class="case-studies-list">
+      <div class="case-studies-list case-studies-list--rows">
         <div class="case-study-card">
           <div class="case-study-image">
+            <div class="case-study-domain">legendarylandscaping.ca</div>
             <a href="https://legendarylandscaping.ca" target="_blank" rel="noopener">
             <picture>
               <source type="image/webp"
@@ -375,12 +378,18 @@
           </div>
         </div>
       </div>
-      <div style="text-align:center; margin-top: var(--space-2xl);">
-        <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--space-md);">Want numbers like these for your business?</p>
+      <!-- Centred CTA stack before the polish:
+      <div style="text-align:center; margin-top: var(- -space-2xl);">
+        <p style="font-size: var(- -text-lg); color: var(- -color-text-secondary); margin-bottom: var(- -space-md);">Want numbers like these for your business?</p>
         <button type="button" class="btn btn-primary open-audit-modal">Get My Free Site Audit</button>
-        <div style="margin-top: var(--space-md);">
+        <div style="margin-top: var(- -space-md);">
           <a href="/work" class="btn btn-ghost">See All Work</a>
         </div>
+      </div>
+      -->
+      <div class="case-study-actions">
+        <button type="button" class="btn btn-primary open-audit-modal">Get My Free Site Audit</button>
+        <a href="/work" class="btn btn-ghost">See all work</a>
       </div>
     </div>
   </section>
@@ -400,7 +409,7 @@
 
   <!-- FAQ -->
   <section class="faq-section">
-    <div class="container">
+    <div class="container faq-layout">
       <div class="section-header">
         <h2>Frequently asked questions</h2>
       </div>
@@ -483,6 +492,7 @@
   </section>
 
   <!-- Guarantee -->
+  <!-- Guarantee band moved inside .final-cta, directly above the button (polish 2026-11-01):
   <section class="guarantee-band">
     <div class="container">
       <div class="guarantee-inner">
@@ -494,12 +504,17 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- Final CTA -->
   <section class="final-cta">
     <div class="container text-center">
       <h2>Ready for a website that gets you calls?</h2>
       <p>Drop your details and I&rsquo;ll reply within 1 business day. Free audit included.</p>
+      <div class="final-cta-guarantee">
+        <div class="guarantee-icon" aria-hidden="true">&#10003;</div>
+        <p><strong>The 90-day money-back guarantee.</strong> Stay 90 days. If you&rsquo;re not showing up higher in Google local search than when you started, I&rsquo;ll refund your management fees for those three months. No fine print, no risk.</p>
+      </div>
       <button type="button" class="btn btn-primary open-audit-modal">Get My Free Site Audit</button>
       <p class="pricing-note">$500/mo &middot; Month to month, no setup fee</p>
       <!-- Was (three-plan era, to 2026-10-19): <p class="pricing-note">Website + Google &middot; $500/mo &middot; Month to month, no setup fee</p> -->
