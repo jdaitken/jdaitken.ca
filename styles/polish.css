@@ -296,3 +296,29 @@
   line-height: var(--leading-relaxed);
 }
 .final-cta-guarantee strong { color: var(--color-surface); font-weight: var(--font-semibold); }
+
+/* ==========================================================================
+   Stage 3 — service, area and pricing pages
+   ========================================================================== */
+
+/* Service-page hero: left-aligned like the home hero (only closing bands centre) */
+.odw-hero { text-align: left; }
+.odw-hero .kicker { text-align: left; }
+.odw-hero h1 { max-width: 16ch; margin: 0 0 var(--space-lg); }
+.odw-hero-subtitle { max-width: 60ch; margin: 0 0 var(--space-xl); }
+.odw-hero h1 { max-width: 22ch; }
+/* Service pages: the statement is a full sentence, so it runs smaller than home's */
+.problem-inner.problem-inner--split p.problem-statement--long { font-size: var(--text-2xl); }
+@media (min-width: 900px) {
+  .problem-inner.problem-inner--split p.problem-statement--long { font-size: var(--text-3xl); }
+}
+
+/* Contact: phone and email in navy, so the red stays on the Send button */
+.contact-method a {
+  color: var(--color-text);
+  font-weight: var(--font-semibold);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.contact-method a:hover { color: var(--color-accent-text); }
