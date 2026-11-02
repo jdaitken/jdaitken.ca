@@ -374,3 +374,9 @@
 .case-study-clutch-link { color: var(--color-text); text-decoration: underline; text-underline-offset: 4px; }
 .proof-list a:hover,
 .case-study-clutch-link:hover { color: var(--color-accent-text); }
+
+/* About: story and promise columns sit on the left edge like every other section */
+.story-content,
+.philosophy-content { margin-left: 0; margin-right: auto; text-align: left; }
+.philosophy-content h2,
+.philosophy-content > p { text-align: left; }
