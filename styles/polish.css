@@ -322,3 +322,55 @@
   text-underline-offset: 4px;
 }
 .contact-method a:hover { color: var(--color-accent-text); }
+
+/* ==========================================================================
+   Stage 4 — about and work
+   ========================================================================== */
+
+/* Work: page title left-aligned, case studies as ruled rows (no card box) */
+.work-hero { text-align: left; }
+.work-hero p { margin: 0; max-width: 60ch; }
+.case-studies.case-studies-list--rows { gap: 0; }
+.case-studies.case-studies-list--rows .case-study-card {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: var(--space-2xl) 0;
+}
+.case-studies.case-studies-list--rows .case-study-card:first-child { padding-top: 0; }
+.case-studies.case-studies-list--rows .case-study-card:last-child { border-bottom: 0; }
+.case-studies .case-study-meta .badge + .badge { display: none; }
+
+/* About: section headers left, cards drawn as ruled blocks like the rest of the site */
+.timeline-section { text-align: left; }
+.timeline-cards--ruled .timeline-card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: var(--space-lg) 0 0;
+}
+.timeline-cards--ruled .timeline-card.featured { border-top: 2px solid var(--color-text); }
+.need-card {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: var(--space-md) 0 0;
+}
+.need-card svg { display: none; }
+.proof-section .proof-list { max-width: 72ch; margin: 0; }
+.testimonial-clutch-link { color: var(--color-text); text-decoration: underline; text-underline-offset: 4px; }
+.skills-section .skill-card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: var(--space-md) 0 0;
+}
+.section-header--split h2:only-child { grid-column: 1 / -1; }
+.proof-list a,
+.case-study-clutch-link { color: var(--color-text); text-decoration: underline; text-underline-offset: 4px; }
+.proof-list a:hover,
+.case-study-clutch-link:hover { color: var(--color-accent-text); }
