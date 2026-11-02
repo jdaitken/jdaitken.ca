@@ -13,11 +13,20 @@ gtag('config', 'G-9Q56QL24ES');
 gtag('config', 'AW-18367499421');
 
 // The gtag/fbq stubs above and below queue every call immediately; only the heavy vendor
-// libraries wait for window load so they don't compete with first paint. /thanks/ (where the
+// libraries wait until shortly after window load so they don't compete with first paint. /thanks/ (where the
 // lead conversion fires) loads them right away so the conversion isn't held back.
+// Was: fn ran at window load itself, which raced first paint on slower devices (Lighthouse
+// counted the vendor bytes against LCP). Now a short pause after load lets the page paint first.
+// function jdAfterLoad(fn) {
+//   if (window.location.pathname.indexOf('/thanks') === 0 || document.readyState === 'complete') fn();
+//   else window.addEventListener('load', fn);
+// }
+var JD_VENDOR_DELAY_MS = 1500;
 function jdAfterLoad(fn) {
-  if (window.location.pathname.indexOf('/thanks') === 0 || document.readyState === 'complete') fn();
-  else window.addEventListener('load', fn);
+  if (window.location.pathname.indexOf('/thanks') === 0) { fn(); return; }
+  var later = function () { setTimeout(fn, JD_VENDOR_DELAY_MS); };
+  if (document.readyState === 'complete') later();
+  else window.addEventListener('load', later);
 }
 
 // Was: loadGtagJs() ran immediately — see git history.
