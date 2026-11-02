@@ -189,7 +189,7 @@
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1285414636910501&ev=PageView&noscript=1"
   /></noscript>
-  <link rel="stylesheet" href="/styles/polish.css?v=20261101d">
+  <link rel="stylesheet" href="/styles/polish.css?v=20261101e">
 </head>
 
 <body>
@@ -259,11 +259,13 @@
 
   <section>
     <div class="container">
-      <div class="case-studies">
+      <!-- <div class="case-studies"> -->
+      <div class="case-studies case-studies-list--rows">
 
         <!-- Case Study 1: Legendary Landscaping -->
         <article class="case-study-card">
           <div class="case-study-image">
+            <div class="case-study-domain">legendarylandscaping.ca</div>
             <a href="https://legendarylandscaping.ca" target="_blank" rel="noopener">
             <picture>
               <source type="image/webp"
@@ -337,6 +339,8 @@
         <!-- Case Study 2: Capital City Cards -->
         <article class="case-study-card">
           <div class="case-study-image">
+            <div class="case-study-domain">capitalcitycards.ca</div>
+            <!-- polish 2026-11-01: pre-Vault screenshot replaced by the live Vault design
             <a href="https://capitalcitycards.ca" target="_blank" rel="noopener">
             <picture>
               <source type="image/webp"
@@ -348,6 +352,20 @@
                 sizes="(max-width: 768px) 92vw, 520px"
                 alt="Capital City Cards website showing product catalog and mobile design"
                 width="1200" height="598"
+                loading="lazy" decoding="async">
+            </picture>
+            </a>
+            -->
+            <a href="https://capitalcitycards.ca" target="_blank" rel="noopener">
+            <picture>
+              <source type="image/webp"
+                srcset="/images/projects/capital-city-cards-vault-600.webp 600w, /images/projects/capital-city-cards-vault-800.webp 800w, /images/projects/capital-city-cards-vault-1000.webp 1000w, /images/projects/capital-city-cards-vault-1200.webp 1200w"
+                sizes="(max-width: 768px) 92vw, 600px">
+              <img
+                src="/images/projects/capital-city-cards-vault-1200.png"
+                sizes="(max-width: 768px) 92vw, 600px"
+                alt="Capital City Cards website: graded football cards, shipped from Ottawa"
+                width="1200" height="625"
                 loading="lazy" decoding="async">
             </picture>
             </a>
@@ -451,6 +469,7 @@
   <!-- Google Reviews -->
   <section class="reviews-section">
     <div class="container">
+      <!-- polish 2026-11-01: logo header replaced by the split header used on home and pricing
       <div class="reviews-header">
         <img src="/images/logos/Google-Review-Logo-480.webp" alt="Google Reviews" width="480" height="270">
         <div class="reviews-rating-row">
@@ -459,7 +478,13 @@
           <span class="review-count">(7 reviews)</span>
         </div>
       </div>
-      <div class="reviews-grid">
+      -->
+      <div class="section-header section-header--split">
+        <h2>What clients say</h2>
+        <p><strong>5.0</strong> <span class="review-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> from 7 Google reviews. <a href="/reviews/">Read them all</a></p>
+      </div>
+      <!-- <div class="reviews-grid"> -->
+      <div class="reviews-grid reviews-grid--featured">
 
         <div class="review-card">
           <div class="review-card-header">
@@ -483,6 +508,7 @@
           <p class="review-text">&ldquo;JD Media built our website for Legendary Landscaping and we couldn&rsquo;t be happier with how it turned out. The site looks sharp, loads fast, and actually shows off our work the way we wanted. JD made the whole process easy &mdash; he asked the right questions upfront and handled everything on the technical side so we could stay focused on our clients. Having a proper online presence has made a real difference in how people find us and reach out. If you&rsquo;re a local trades or landscaping business looking to level up your website, I&rsquo;d highly recommend giving JD Media a call.&rdquo;</p>
         </div>
 
+        <!-- polish 2026-11-01: personal-connection reviews stay on /reviews, not featured here
         <div class="review-card">
           <div class="review-card-header">
             <div>
@@ -504,6 +530,7 @@
           </div>
           <p class="review-text">&ldquo;JD media was super helpful with my website launch! They were very attentive to what I wanted and delivered faster than expected. Modifications I asked for were completed the next day and the whole process was smooth, fast and easy. Highly recommend!&rdquo;</p>
         </div>
+        -->
 
       </div>
     </div>
