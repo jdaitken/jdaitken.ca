@@ -63,11 +63,6 @@ $250."*
   to the free map scan.
 - No "recommended" badge: with one main plan, it is the recommendation.
 
-<!-- Superseded 2026-10-19 — kept per the no-delete rule:
-Pricing page: three cards, left to right, same visual weight, one line under them ("No setup
-fee. No contract. Cancel anytime."), guarantee once at the decision point. Caretaker and
-one-time builds stay off the cards.
--->
 
 ### Google Profile (Local) — $250/month — *front door, GBP management only*
 
@@ -200,21 +195,6 @@ if a client leaves early. Client-facing line: *"No setup fee, no contract."*
   build. Annual prepay (below) is the answer for a client who wants a discount; it is not a
   requirement.
 
-<!-- Superseded 2026-09-27 — kept per the no-delete rule:
-**$1,500, waived in full on a 12-month commitment.** Applies to Growth and Pro. Replaces the old
-bare "setup is $0" line — the fee is real, it's just paid in commitment instead of cash.
-
-- If a client cancels before completing the 12-month minimum, for reasons other than the 90-day
-  guarantee or a termination by JD Media without cause, the waived fee becomes payable, prorated
-  for the months remaining in the term. This is the client-facing description of the mechanism
-  `ops/agreements/terms.md`'s Setup Fee & Early Termination section already implements — Order
-  Forms need `setup_fee_value: 1500` set to activate it.
-- Purpose: gives the 12-month term an honest reason to exist beyond "because I said so," and
-  covers the build cost if a client leaves early. A full custom build plus several months of
-  active SEO/GBP/content work, collected at $275-500/month, does not break even inside a single
-  season.
-
--->
 
 ## Seasonality
 
@@ -365,8 +345,6 @@ fine print, no risk.
   service and area pages (pricing teaser, FAQ + FAQ schema, CTA note; "See plans" button now
   "See pricing"), and the landing page offer list. Meta descriptions and the guarantee wording
   (about page included) never named plans, so they were unchanged.
-  <!-- Was: Pricing page only so far — the other 12 derived files still describe three plans
-  and need propagating. -->
 
 - 2026-10-18 — Renamed the plans to say what's in them: Google Profile ($250), Website + Google
   ($500), Website + Google + Ads ($900); Local/Growth/Pro kept as internal aliases. Ads defined
